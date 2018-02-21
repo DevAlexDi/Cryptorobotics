@@ -1,3 +1,31 @@
+@media (max-width: 767px) {
+  #faqs {
+    padding: 35px 0; }
 
+  #faqs h2 {
+    margin-bottom: 30px; }
+
+  #faqs #all_faq {
+    margin-top: 30px; }
+
+  #contacts {
+    padding: 35px 0 40px; }
+
+  #contacts h2 {
+    margin-bottom: 25px; }
+
+  #contacts p {
+    margin-bottom: 0; }
+
+  #contacts .icon {
+    margin-top: 30px; }
+
+  footer {
+    padding: 35px 0; }
+
+  footer .menu {
+    margin-top: 35px;
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=media-t.css.map */

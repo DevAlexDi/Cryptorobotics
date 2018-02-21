@@ -14,3 +14,173 @@
 body{
     font-family: "FiraSans";
 }
+
+#faqs {
+    background: #f2f5fa;
+    padding: 90px 0;
+
+    h2 {
+        text-align: center;
+        color: #0d264e;
+        font: 36px FiraSans-Bold;
+        margin-bottom: 70px;
+    }
+
+    .faq {
+        background: white;
+        padding: 20px 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 10px;
+
+        .question {
+            color: #0d264e;
+            font: 16px FiraSans-Bold;
+            line-height: 1.7;
+            position: relative;
+            margin-bottom: 15px;
+            transition: 0.3s;
+            padding-right: 25px;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 9px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -4.5px;
+                background: url(../img/faq_arrows.png) no-repeat 0 -9px;
+            }
+
+            &.collapsed {
+                margin-bottom: 0;
+
+                &:after {
+                    background-position: 0 0;
+                }
+            }
+        }
+
+        .answer {
+            font-size: 16px;
+            line-height: 1.7;
+            color: white;
+        }
+
+        &.opened {
+            background: #25a9df;
+
+            .question {
+                color: white;
+            }
+        }
+    }
+
+    #all_faq {
+        margin: 50px auto 0;
+        color: #0d264e;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#contacts {
+    background: #0d264e;
+    position: relative;
+    padding: 85px 0 90px;
+
+    h2 {
+        color: white;
+        font: 36px FiraSans-Bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: #25a9df;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .icon {
+        width: 56px;
+        height: 56px;
+        background: #004996;
+        border-radius: 56px;
+        margin: 0 auto 25px;
+        display: flex;
+
+        span {
+            display: block;
+            margin: auto;
+            background-image: url(../img/contacts.png);
+            background-repeat: no-repeat;
+            width: 27px;
+        }
+
+        &.cont_addr span {
+            background-position: 0 0;
+            height: 28px;
+        }
+        &.cont_phone span {
+            background-position: 0 -28px;
+            height: 29px;
+        }
+        &.cont_phone span {
+            background-position: 0 -28px;
+            height: 29px;
+        }
+        &.cont_mail span {
+            background-position: 0 -57px;
+            height: 20px;
+        }
+    }
+
+    .addr, a {
+        color: #25a9df;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+footer {
+    background: #f2f5fa;
+    margin: 0;
+    padding: 60px 0;
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        margin: 55px 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 10px;
+
+            a, span {
+                color: #888;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #25a9df;
+                }
+            }
+        }
+    }
+}

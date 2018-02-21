@@ -10,4 +10,122 @@
 body {
   font-family: "FiraSans"; }
 
+#faqs {
+  background: #f2f5fa;
+  padding: 90px 0; }
+  #faqs h2 {
+    text-align: center;
+    color: #0d264e;
+    font: 36px FiraSans-Bold;
+    margin-bottom: 70px; }
+  #faqs .faq {
+    background: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px; }
+    #faqs .faq .question {
+      color: #0d264e;
+      font: 16px FiraSans-Bold;
+      line-height: 1.7;
+      position: relative;
+      margin-bottom: 15px;
+      transition: 0.3s;
+      padding-right: 25px; }
+      #faqs .faq .question:after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 9px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -4.5px;
+        background: url(../img/faq_arrows.png) no-repeat 0 -9px; }
+      #faqs .faq .question.collapsed {
+        margin-bottom: 0; }
+        #faqs .faq .question.collapsed:after {
+          background-position: 0 0; }
+    #faqs .faq .answer {
+      font-size: 16px;
+      line-height: 1.7;
+      color: white; }
+    #faqs .faq.opened {
+      background: #25a9df; }
+      #faqs .faq.opened .question {
+        color: white; }
+  #faqs #all_faq {
+    margin: 50px auto 0;
+    color: #0d264e; }
+    #faqs #all_faq:hover {
+      color: white; }
+
+#contacts {
+  background: #0d264e;
+  position: relative;
+  padding: 85px 0 90px; }
+  #contacts h2 {
+    color: white;
+    font: 36px FiraSans-Bold;
+    text-align: center;
+    margin-bottom: 40px; }
+  #contacts p {
+    color: #25a9df;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px; }
+  #contacts .icon {
+    width: 56px;
+    height: 56px;
+    background: #004996;
+    border-radius: 56px;
+    margin: 0 auto 25px;
+    display: flex; }
+    #contacts .icon span {
+      display: block;
+      margin: auto;
+      background-image: url(../img/contacts.png);
+      background-repeat: no-repeat;
+      width: 27px; }
+    #contacts .icon.cont_addr span {
+      background-position: 0 0;
+      height: 28px; }
+    #contacts .icon.cont_phone span {
+      background-position: 0 -28px;
+      height: 29px; }
+    #contacts .icon.cont_phone span {
+      background-position: 0 -28px;
+      height: 29px; }
+    #contacts .icon.cont_mail span {
+      background-position: 0 -57px;
+      height: 20px; }
+  #contacts .addr, #contacts a {
+    color: #25a9df;
+    font-size: 18px;
+    transition: 0.3s; }
+  #contacts a:hover {
+    color: white; }
+
+footer {
+  background: #f2f5fa;
+  margin: 0;
+  padding: 60px 0; }
+  footer .logo {
+    text-align: center; }
+  footer .menu {
+    margin: 55px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    footer .menu li {
+      margin: 0 10px; }
+      footer .menu li a, footer .menu li span {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s; }
+        footer .menu li a:hover, footer .menu li span:hover {
+          color: #25a9df; }
+
 /*# sourceMappingURL=style-t.css.map */
