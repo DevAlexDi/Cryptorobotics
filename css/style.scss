@@ -2,5 +2,121 @@
     background-color: #0d264e;
     .header-nav{
         border-bottom: 1px solid #004996;
+        .flex-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .side{
+                &.left-side{
+                    width: 265px;
+                }
+                &.right-side{
+                    width: 265px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .flex-lang{
+                        display: flex;
+                        align-items: center;
+                        .lang-wrapp{
+                            padding-right: 20px;
+                            margin-right: 28px;
+                            cursor: pointer;
+                            position: relative;
+                            &:after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 7px;
+                                right: 0;
+                                width: 11px;
+                                height: 7px;
+                                background-image: url(../img/arr-down.png);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                            &:hover{
+                                .lang{
+                                    color: #fff;
+                                    
+                                }
+                            }
+                            .lang{
+                                color: #25a9df;
+                                text-transform: uppercase;
+                                font-size: 16px;
+                                transition: 0.3s;
+                                
+                            }
+                            .lang-list{
+                                display: none;
+                            }
+                        }
+                        .login{
+                            display: block;
+                            cursor: pointer;
+                            padding: 10px 36px;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            font-family: "FiraSans-Bold";
+                            border: 2px solid #25a9df;
+                            border-radius: 50px;
+                            transition: 0.3s;
+                            color: #fff;
+                            &:hover{
+                                background:#25a9df;
+                            }
+                            
+                        }
+                    }
+                }
+                &.mid-side{
+                    .menu-list{
+                        display: flex;
+                        list-style: none;
+                        margin: 0;
+                        .first-itm{
+                            a,span{
+                                cursor: pointer;
+                                color: #25a9df;
+                                font-size: 16px;
+                                display: block;
+                                padding: 33px 11px;
+                                position: relative;
+                                transition: 0.3s;
+                                
+                                &:after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    bottom: -1px;
+                                    height: 2px;
+                                    left: 0;
+                                    width: 100%;
+                                    background: #25a9df;
+                                    transition: 0.3s;
+                                    opacity: 0;
+                                }
+                            }
+                            &:hover{
+                                a,span{
+                                    color: #fff;
+                                    &:after{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            &.active{
+                                a,span{
+                                    color: #fff;
+                                    &:after{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
