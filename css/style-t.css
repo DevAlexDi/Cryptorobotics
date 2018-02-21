@@ -10,6 +10,54 @@
 body {
   font-family: "FiraSans"; }
 
+.people {
+  padding: 90px 0; }
+  .people h2 {
+    text-align: center;
+    color: #0d264e;
+    font: 36px FiraSans-Bold;
+    margin-bottom: 80px; }
+  .people .human_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .people .human_wrap:before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    .people .human_wrap .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: center center no-repeat;
+      background-size: cover; }
+    .people .human_wrap .desc {
+      position: absolute;
+      bottom: 0;
+      background: rgba(13, 38, 78, 0.6);
+      color: white;
+      left: 0;
+      right: 0;
+      padding: 20px 0; }
+      .people .human_wrap .desc .name {
+        text-align: center;
+        font: 17px FiraSans-Bold;
+        margin: 0; }
+      .people .human_wrap .desc .text {
+        text-align: center;
+        margin: 15px 0 0;
+        font-size: 15px;
+        line-height: 1.7;
+        display: none; }
+  .people .all_people {
+    color: black;
+    margin: 30px auto 0; }
+    .people .all_people:hover {
+      color: white; }
+
 #news {
   background: #f2f5fa;
   padding: 90px 0; }
