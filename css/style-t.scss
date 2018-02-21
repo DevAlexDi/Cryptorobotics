@@ -15,6 +15,50 @@ body{
     font-family: "FiraSans";
 }
 
+#rates {
+    padding: 85px 0 90px;
+
+    h2 {
+        text-align: center;
+        color: #0d264e;
+        font: 36px FiraSans-Bold;
+        margin-bottom: 80px;
+    }
+
+    .rate {
+        background: #f2f5fa;
+        padding: 50px 40px 45px;
+
+        .num {
+            color: #0d264e;
+            font: 36px FiraSans-Bold;
+            text-align: center;
+            padding-bottom: 45px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: 0;
+                background: #ccc;
+            }
+        }
+
+        .img {
+            min-height: 50px;
+            display: flex;
+            margin-top: 40px;
+
+            img {
+                margin: auto;
+            }
+        }
+    }
+}
+
 #faqs {
     background: #f2f5fa;
     padding: 90px 0;
@@ -38,7 +82,7 @@ body{
             font: 16px FiraSans-Bold;
             line-height: 1.7;
             position: relative;
-            margin-bottom: 15px;
+            margin-bottom: 0;
             transition: 0.3s;
             padding-right: 25px;
 
@@ -51,15 +95,7 @@ body{
                 right: 0;
                 top: 50%;
                 margin-top: -4.5px;
-                background: url(../img/faq_arrows.png) no-repeat 0 -9px;
-            }
-
-            &.collapsed {
-                margin-bottom: 0;
-
-                &:after {
-                    background-position: 0 0;
-                }
+                background: url(../img/faq_arrows.png) no-repeat 0 0;
             }
         }
 
@@ -74,6 +110,11 @@ body{
 
             .question {
                 color: white;
+                margin-bottom: 15px;
+
+                &:after {
+                    background-position: 0 -9px;
+                }
             }
         }
     }

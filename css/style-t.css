@@ -10,6 +10,37 @@
 body {
   font-family: "FiraSans"; }
 
+#rates {
+  padding: 85px 0 90px; }
+  #rates h2 {
+    text-align: center;
+    color: #0d264e;
+    font: 36px FiraSans-Bold;
+    margin-bottom: 80px; }
+  #rates .rate {
+    background: #f2f5fa;
+    padding: 50px 40px 45px; }
+    #rates .rate .num {
+      color: #0d264e;
+      font: 36px FiraSans-Bold;
+      text-align: center;
+      padding-bottom: 45px;
+      position: relative; }
+      #rates .rate .num:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        background: #ccc; }
+    #rates .rate .img {
+      min-height: 50px;
+      display: flex;
+      margin-top: 40px; }
+      #rates .rate .img img {
+        margin: auto; }
+
 #faqs {
   background: #f2f5fa;
   padding: 90px 0; }
@@ -29,7 +60,7 @@ body {
       font: 16px FiraSans-Bold;
       line-height: 1.7;
       position: relative;
-      margin-bottom: 15px;
+      margin-bottom: 0;
       transition: 0.3s;
       padding-right: 25px; }
       #faqs .faq .question:after {
@@ -41,11 +72,7 @@ body {
         right: 0;
         top: 50%;
         margin-top: -4.5px;
-        background: url(../img/faq_arrows.png) no-repeat 0 -9px; }
-      #faqs .faq .question.collapsed {
-        margin-bottom: 0; }
-        #faqs .faq .question.collapsed:after {
-          background-position: 0 0; }
+        background: url(../img/faq_arrows.png) no-repeat 0 0; }
     #faqs .faq .answer {
       font-size: 16px;
       line-height: 1.7;
@@ -53,7 +80,10 @@ body {
     #faqs .faq.opened {
       background: #25a9df; }
       #faqs .faq.opened .question {
-        color: white; }
+        color: white;
+        margin-bottom: 15px; }
+        #faqs .faq.opened .question:after {
+          background-position: 0 -9px; }
   #faqs #all_faq {
     margin: 50px auto 0;
     color: #0d264e; }

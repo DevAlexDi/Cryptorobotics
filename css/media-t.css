@@ -1,4 +1,13 @@
+@media (max-width: 991px) {
+  #rates .rate {
+    margin-bottom: 30px; } }
 @media (max-width: 767px) {
+  #rates {
+    padding: 35px 0; }
+
+  #rates h2 {
+    margin-bottom: 30px; }
+
   #faqs {
     padding: 35px 0; }
 
