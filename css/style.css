@@ -17,6 +17,24 @@
   .button-style:hover {
     background: #25a9df; }
 
+.button-style-2 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: #25a9df;
+  font-family: "FiraSans-Bold";
+  border: 2px solid #25a9df;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff; }
+
 .sec-lvl-1 {
   background-color: #0d264e; }
   .sec-lvl-1 .header-nav {
@@ -127,7 +145,7 @@
 
 .main-baner {
   position: relative;
-  padding: 70px 0 130px 0; }
+  padding-top: 70px; }
   .main-baner .for-z-index {
     position: relative;
     z-index: 10; }
@@ -176,10 +194,10 @@
             justify-content: space-between; }
     .main-baner .flex-counter .text-start {
       margin: 0;
-      margin-right: 50px;
       font-size: 24px;
       font-family: "FiraSans-Bold";
-      color: #fff; }
+      color: #fff;
+      line-height: 30px; }
     .main-baner .flex-counter .main-counter-wr {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -188,14 +206,21 @@
       font-size: 30px;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      position: relative;
+      top: -12px; }
       .main-baner .flex-counter .main-counter-wr .counter-velue {
+        line-height: 33px;
         color: #fff;
         font-size: 44px;
         display: block;
         position: relative;
         top: 2px;
         padding: 0 10px; }
+        .main-baner .flex-counter .main-counter-wr .counter-velue:last-child {
+          padding-right: 0; }
+          .main-baner .flex-counter .main-counter-wr .counter-velue:last-child .desc {
+            left: calc(50% + 3px); }
         .main-baner .flex-counter .main-counter-wr .counter-velue .desc {
           display: block;
           position: absolute;
@@ -207,5 +232,148 @@
           font-size: 14px; }
         .main-baner .flex-counter .main-counter-wr .counter-velue .d, .main-baner .flex-counter .main-counter-wr .counter-velue .h, .main-baner .flex-counter .main-counter-wr .counter-velue .m, .main-baner .flex-counter .main-counter-wr .counter-velue .s {
           letter-spacing: 2px; }
+  .main-baner .flex-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-baner .flex-buttons .button-style:first-child {
+      margin-right: 20px; }
+
+.form-and-soc {
+  background: #fff;
+  position: relative;
+  padding: 45px 50px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15); }
+  .form-and-soc .flex-form-soc {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .form-and-soc .flex-form-soc.opened .left-side {
+      width: 100%; }
+      .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+        margin-right: 43px; }
+    .form-and-soc .flex-form-soc.opened .right-side {
+      width: 0;
+      padding-left: 0; }
+    .form-and-soc .flex-form-soc .left-side {
+      width: 36.5%;
+      overflow: hidden;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .form-and-soc .flex-form-soc .left-side .abs-socials {
+        position: absolute;
+        width: 1145px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+          width: 56px;
+          height: 56px;
+          background-color: #25a9df;
+          border-radius: 50%;
+          margin-right: 25px;
+          cursor: pointer;
+          display: block;
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+      .form-and-soc .flex-form-soc .left-side .plus-wr {
+        background: #fff;
+        height: 100%;
+        position: relative;
+        z-index: 5;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .form-and-soc .flex-form-soc .left-side .plus-wr .plus {
+          width: 56px;
+          height: 56px;
+          border: 2px solid #25a9df;
+          border-radius: 50%;
+          position: relative;
+          -webkit-transition: 0.3s;
+          transition: 0.3s;
+          cursor: pointer; }
+          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover {
+            background-color: #25a9df; }
+            .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:before {
+              background: #fff; }
+            .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:after {
+              background: #fff; }
+          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            width: 4px;
+            height: 22px;
+            background: #25a9df;
+            -webkit-transition: 0.3s;
+            transition: 0.3s; }
+          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            width: 22px;
+            height: 4px;
+            background: #25a9df;
+            -webkit-transition: 0.3s;
+            transition: 0.3s; }
+    .form-and-soc .flex-form-soc .right-side {
+      width: 63.5%;
+      padding-left: 57px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .form-and-soc .flex-form-soc .right-side input {
+        display: block;
+        width: 100%;
+        max-width: 345px;
+        border: none;
+        outline: none;
+        padding: 17px 0;
+        font-size: 18px;
+        border-bottom: 2px solid #dddddd; }
+      .form-and-soc .flex-form-soc .right-side input::-webkit-input-placeholder {
+        color: #888888; }
+      .form-and-soc .flex-form-soc .right-side input::-moz-placeholder {
+        color: #888888; }
+      .form-and-soc .flex-form-soc .right-side input:-moz-placeholder {
+        color: #888888; }
+      .form-and-soc .flex-form-soc .right-side input:-ms-input-placeholder {
+        color: #888888; }
 
 /*# sourceMappingURL=style.css.map */
