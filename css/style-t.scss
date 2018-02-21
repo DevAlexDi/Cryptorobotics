@@ -15,6 +15,50 @@ body{
     font-family: "FiraSans";
 }
 
+#faqs {
+    background: #f2f5fa;
+    padding: 90px 0;
+
+    h2 {
+        text-align: center;
+        color: #0d264e;
+        font: 36px FiraSans-Bold;
+        margin-bottom: 70px;
+    }
+
+    .faq {
+        background: white;
+        padding: 20px 30px;
+        cursor: pointer;
+
+        .question {
+            color: #0d264e;
+            font: 16px FiraSans-Bold;
+            line-height: 1.7;
+            position: relative;
+            margin-bottom: 15px;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 9px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -4.5px;
+                background: url(../img/faq_arrows.png) no-repeat 0 0;
+            }
+        }
+
+        .answer {
+            font-size: 16px;
+            line-height: 1.7;
+            color: white;
+        }
+    }
+}
+
 #contacts {
     background: #0d264e;
     position: relative;
