@@ -133,7 +133,17 @@ $(document).ready(function () {
     //==============================================
 
 
+    $('.news_item').click(function() {
+        var url = $(this).find('a').attr('href');
+        window.open(url);
+    });
 
+    $('#all_news').click(function(e) {
+        e.preventDefault();
+        $(this).fadeOut(function() {
+            $(this).next().fadeIn();
+        });
+    });
 
 
     $('.faq .answer').on('show.bs.collapse', function(){
