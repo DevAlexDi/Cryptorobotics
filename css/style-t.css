@@ -10,4 +10,26 @@
 body {
   font-family: "FiraSans"; }
 
+footer {
+  background: #f2f5fa;
+  margin: 0;
+  padding: 60px 0; }
+  footer .logo {
+    text-align: center; }
+  footer .menu {
+    margin: 55px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    footer .menu li {
+      margin: 0 10px; }
+      footer .menu li a, footer .menu li span {
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s; }
+        footer .menu li a:hover, footer .menu li span:hover {
+          color: #25a9df; }
+
 /*# sourceMappingURL=style-t.css.map */

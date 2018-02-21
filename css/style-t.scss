@@ -14,3 +14,36 @@
 body{
     font-family: "FiraSans";
 }
+
+footer {
+    background: #f2f5fa;
+    margin: 0;
+    padding: 60px 0;
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        margin: 55px 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 10px;
+
+            a, span {
+                color: #888;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #25a9df;
+                }
+            }
+        }
+    }
+}
