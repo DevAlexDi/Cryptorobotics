@@ -15,6 +15,60 @@ body{
     font-family: "FiraSans";
 }
 
+#solution {
+    padding: 90px 0;
+
+    h2 {
+        text-align: center;
+        color: #0d264e;
+        font: 36px FiraSans-Bold;
+        margin-bottom: 35px;
+    }
+
+    .img {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #0d264e;
+        line-height: 1.7;
+    }
+
+    .epigraph {
+        font-size: 20px;
+        color: #888;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: 16px;
+            color: #0d264e;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 20px;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 6px;
+                background: #25a9df;
+                position: absolute;
+                left: 0;
+                top: 9px;
+            }
+        }
+    }
+}
+
 #man {
     background: #0d264e;
     padding: 90px 0;
@@ -79,12 +133,16 @@ body{
             display: flex;
 
             a {
-                display: block;
+                display: flex;
                 width: 56px;
                 height: 56px;
                 border-radius: 56px;
                 background: #25a9df;
                 margin-right: 20px;
+
+                img {
+                    margin: auto;
+                }
             }
         }
     }

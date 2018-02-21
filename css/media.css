@@ -160,8 +160,7 @@
     margin: 0 auto; }
 
   .form-and-soc {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px); }
+    transform: translateY(30px); }
 
   .form-and-soc .flex-form-soc .left-side {
     position: relative;
@@ -184,8 +183,7 @@
     margin: 0 10px 20px 10px; }
 
   .form-and-soc .flex-form-soc .left-side .abs-socials {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    justify-content: space-around; }
 
   .form-and-soc .flex-form-soc .left-side .abs-socials {
     height: 70px; }

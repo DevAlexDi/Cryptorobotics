@@ -10,6 +10,12 @@
   #rates .rate {
     margin-bottom: 30px; } }
 @media (max-width: 767px) {
+  #solution {
+    padding: 35px 0; }
+
+  #solution h2, #solution .epigraph {
+    margin-bottom: 25px; }
+
   #man {
     padding: 35px 0; }
 
