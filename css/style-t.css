@@ -10,6 +10,82 @@
 body {
   font-family: "FiraSans"; }
 
+#news {
+  background: #f2f5fa;
+  padding: 90px 0; }
+  #news h2 {
+    text-align: center;
+    color: #0d264e;
+    font: 36px FiraSans-Bold;
+    margin-bottom: 70px; }
+  #news .news_item {
+    cursor: pointer;
+    margin-bottom: 30px; }
+    #news .news_item .img_wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px; }
+      #news .news_item .img_wrap:before {
+        content: '';
+        display: block;
+        padding-top: 61.6%; }
+      #news .news_item .img_wrap .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: center center no-repeat;
+        background-size: cover; }
+        #news .news_item .img_wrap .img:after {
+          content: '';
+          background: #0d264e;
+          opacity: 0.5;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transition: 0.3s; }
+    #news .news_item .date {
+      color: #888;
+      font-size: 14px; }
+    #news .news_item .title {
+      color: #0d264e;
+      font: 18px FiraSans-Bold;
+      transition: 0.3s;
+      line-height: 1.6;
+      display: block;
+      margin-top: 5px; }
+    #news .news_item .read {
+      color: #25a9df;
+      text-transform: uppercase;
+      display: inline-block;
+      border-bottom: 1px solid #25a9df;
+      font-size: 14px;
+      margin-top: 10px;
+      position: relative; }
+      #news .news_item .read:after {
+        position: absolute;
+        content: '';
+        width: 18px;
+        height: 10px;
+        display: block;
+        background: url(../img/news_arrow.png) no-repeat center;
+        right: -30px;
+        top: 5px; }
+    #news .news_item:hover .img_wrap .img:after {
+      opacity: 0; }
+    #news .news_item:hover .title {
+      color: #25a9df; }
+  #news #all_news {
+    color: #0d264e;
+    margin: 30px auto 0; }
+    #news #all_news:hover {
+      color: white; }
+
 #rates {
   padding: 85px 0 90px; }
   #rates h2 {

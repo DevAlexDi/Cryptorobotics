@@ -2,6 +2,15 @@
   #rates .rate {
     margin-bottom: 30px; } }
 @media (max-width: 767px) {
+  #news {
+    padding: 35px 0; }
+
+  #news h2 {
+    margin-bottom: 30px; }
+
+  #news #all_news {
+    margin-top: 0; }
+
   #rates {
     padding: 35px 0; }
 
