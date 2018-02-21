@@ -1,14 +1,45 @@
-@media (max-width: 1500px) {
-  
+@media (max-width: 1199px) {
+  #man .man_text {
+    padding-left: 50px;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 991px) {
+  #man .man_text {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
   #rates .rate {
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
+  #man {
+    padding: 35px 0;
+  }
+  #man .man_text {
+    padding-top: 30px;
+  }
+  #man .man_text h5, #man .man_text p {
+    margin-bottom: 20px;
+  }
+  #man .man_text .soc {
+    justify-content: center;
+  }
+
+  .people {
+    padding: 35px 0;
+  }
+  .people h2 {
+    margin-bottom: 30px;
+  }
+  .people .all_people {
+    margin-top: 0;
+  }
+
   #news {
     padding: 35px 0;
   }

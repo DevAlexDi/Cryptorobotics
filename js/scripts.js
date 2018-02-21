@@ -261,6 +261,19 @@ particlesJS('particles-js-2',
     
     //==============================================
 
+    $('.human_wrap').mouseover(function(e) {
+      $(this).find('.desc .text').slideDown(300);
+    });
+    $('.human_wrap').mouseleave(function(e) {
+        $(this).find('.desc .text').slideUp(300);
+    });
+
+    $('.all_people').click(function(e) {
+        e.preventDefault();
+        $(this).fadeOut(function() {
+            $(this).next().fadeIn();
+        });
+    });
 
     $('.news_item').click(function() {
         var url = $(this).find('a').attr('href');
