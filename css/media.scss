@@ -88,13 +88,6 @@
     .second-form .form-and-soc{
         position: relative;
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
 @media (max-width: 767px) {
@@ -218,4 +211,29 @@
     .sec-lvl-2 {
         padding: 70px 0 50px 0;
     }
+    
+    .sec-slider-realiz .slider-realiz-init .slick-arrow{
+        width: 35px;
+        height: 35px;
+    }
+    .sec-slider-realiz h4 {
+        font-size: 22px;
+    }
+    .sec-slider-realiz .for-padd-slider {
+        padding: 0 38px;
+    }
+    
+    .sec-slider-realiz{
+        padding: 40px 0;
+    }
+    .sec-slider-realiz h4{
+        margin-bottom: 36px;
+    }
+    .sec-slider-realiz .slider-realiz-init .one-slide .desc{
+        font-size: 14px;
+    }
+    .people .human_wrap .desc .text{
+        display: block!important;
+    }
+    
 }

@@ -251,6 +251,7 @@
             display: flex;
             color: #25a9df;
             font-size: 30px;
+            width: 260px;
             align-items: center;
             position: relative;
             top: -12px;
@@ -480,13 +481,43 @@ button{
 .sec-slider-realiz{
     background: #f2f5fa;
     padding: 85px 0;
+    &.conf-sec{
+        background: #0d264e;
+        h4{
+            color: #fff;
+        }
+        .slider-realiz-init{
+            .one-slide{
+                .date{
+                    color: #66b3ff;
+                    &:before{
+                        background: #0d264e;
+                    }
+                    &:after{
+                        border-color: #ffffff;
+                    }
+                }
+                .desc{
+                    color: #66b3ff;
+                }
+            }
+            .slick-arrow{
+                &:before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
     h4{
         font-size: 36px;
         font-weight: normal;
         color: #0d264e;
         font-family: "FiraSans-Bold";
-        margin-bottom: 65px;
+        margin-bottom: 80px;
         text-align: center;
+    }
+    .for-padd-slider{
+        padding: 0 56px;
     }
     .slider-realiz-init{
         .one-slide{
@@ -509,7 +540,7 @@ button{
                 padding-bottom: 60px;
                 text-align: center;
                 font-size: 13px;
-                    font-weight: bold;
+                font-weight: bold;
                 color: #0d264e;
                 text-transform: uppercase;
                 &:before{
@@ -541,6 +572,54 @@ button{
                 text-align: center;
                 font-size: 16px;
                 color: #0d264e;
+            }
+        }
+        .slick-arrow{
+            display: block;
+            position: absolute;
+            top: 69px;
+            transform: translateY(-50%);
+            font-weight: normal;
+            border: none;
+            background-color: transparent;
+            border: 2px solid #25a9df;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 0;
+            transition: 0.3s;
+            &:hover{
+                background-color: #25a9df;
+                &:before{
+                    opacity: 1;
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 18px;
+                height: 10px;
+                opacity: 0;
+            }
+            &.slick-prev{
+                right: calc(100% + 5px);
+                background-image: url(../img/arr-left.png);
+                &:before{
+                    background-image: url(../img/arr-left-w.png);
+                }
+            }
+            &.slick-next{
+                left: calc(100% + 5px);
+                background-image: url(../img/arr-right.png);
+                &:before{
+                    background-image: url(../img/arr-right-w.png);
+                }
             }
         }
     }

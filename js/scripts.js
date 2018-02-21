@@ -247,13 +247,27 @@ particlesJS('particles-js-2',
   );    
     
     $('.slider-realiz-init').slick({
-      dots: false,
+        dots: false,
         arrows:true,
-      infinite: false,
-      
-      slidesToShow: 4,
-        slidesToScroll:1
-    
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll:1,
+         responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                 slidesToShow: 2,
+                slidesToScroll:1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll:1
+              }
+            }
+        ]
     
     });
     
