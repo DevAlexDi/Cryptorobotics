@@ -261,6 +261,15 @@ particlesJS('particles-js-2',
     
     //==============================================
 
+    // счетчик
+
+
+    counter();
+    setInterval(counter, 1000);
+
+
+    // конец счетчика
+
     $('.human_wrap').mouseover(function(e) {
       $(this).find('.desc .text').slideDown(300);
     });
@@ -316,3 +325,17 @@ particlesJS('particles-js-2',
     
 
 });
+
+function counter() {
+    var end = 1519819200;
+    var now = Math.round(new Date().getTime() / 1000);
+    var diff = end - now;
+    var days = parseInt(diff/86400);
+    var hours = parseInt((diff - (days * 86400))/3600);
+    var minutes = parseInt((diff % 3600) / 60);
+    var seconds = parseInt(diff % 60);
+    $('.main-counter-wr .d').text(days);
+    $('.main-counter-wr .h').text(hours);
+    $('.main-counter-wr .m').text(minutes);
+    $('.counter-velue .s').text(seconds);
+}
