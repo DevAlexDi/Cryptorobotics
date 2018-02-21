@@ -10,6 +10,60 @@
 body {
   font-family: "FiraSans"; }
 
+#man {
+  background: #0d264e;
+  padding: 90px 0; }
+  #man .man_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    #man .man_wrap:before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    #man .man_wrap .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: center center no-repeat;
+      background-size: cover; }
+    #man .man_wrap .desc {
+      position: absolute;
+      bottom: 0;
+      background: rgba(13, 38, 78, 0.6);
+      color: white;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      font-size: 14px;
+      font-style: italic;
+      color: white; }
+  #man .man_text {
+    padding-left: 90px;
+    padding-top: 55px; }
+    #man .man_text h5 {
+      color: white;
+      font: 36px FiraSans-Bold;
+      margin-bottom: 35px; }
+    #man .man_text p {
+      font-size: 16px;
+      color: #25a9df;
+      line-height: 1.7;
+      margin-bottom: 35px; }
+      #man .man_text p.big {
+        font-size: 20px; }
+    #man .man_text .soc {
+      display: flex; }
+      #man .man_text .soc a {
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 56px;
+        background: #25a9df;
+        margin-right: 20px; }
+
 .people {
   padding: 90px 0; }
   .people h2 {
@@ -53,7 +107,7 @@ body {
         line-height: 1.7;
         display: none; }
   .people .all_people {
-    color: black;
+    color: #0d264e;
     margin: 30px auto 0; }
     .people .all_people:hover {
       color: white; }
