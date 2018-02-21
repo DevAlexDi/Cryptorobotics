@@ -10,6 +10,52 @@
 body {
   font-family: "FiraSans"; }
 
+#contacts {
+  background: #0d264e;
+  position: relative;
+  padding: 85px 0 90px; }
+  #contacts h2 {
+    color: white;
+    font: 36px FiraSans-Bold;
+    text-align: center;
+    margin-bottom: 40px; }
+  #contacts p {
+    color: #25a9df;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px; }
+  #contacts .icon {
+    width: 56px;
+    height: 56px;
+    background: #004996;
+    border-radius: 56px;
+    margin: 0 auto 25px;
+    display: flex; }
+    #contacts .icon span {
+      display: block;
+      margin: auto;
+      background-image: url(../img/contacts.png);
+      background-repeat: no-repeat;
+      width: 27px; }
+    #contacts .icon.cont_addr span {
+      background-position: 0 0;
+      height: 28px; }
+    #contacts .icon.cont_phone span {
+      background-position: 0 -28px;
+      height: 29px; }
+    #contacts .icon.cont_phone span {
+      background-position: 0 -28px;
+      height: 29px; }
+    #contacts .icon.cont_mail span {
+      background-position: 0 -57px;
+      height: 20px; }
+  #contacts .addr, #contacts a {
+    color: #25a9df;
+    font-size: 18px;
+    transition: 0.3s; }
+  #contacts a:hover {
+    color: white; }
+
 footer {
   background: #f2f5fa;
   margin: 0;
