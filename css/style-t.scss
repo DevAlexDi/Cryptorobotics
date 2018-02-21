@@ -30,6 +30,8 @@ body{
         background: white;
         padding: 20px 30px;
         cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 10px;
 
         .question {
             color: #0d264e;
@@ -37,6 +39,8 @@ body{
             line-height: 1.7;
             position: relative;
             margin-bottom: 15px;
+            transition: 0.3s;
+            padding-right: 25px;
 
             &:after {
                 content: '';
@@ -47,13 +51,38 @@ body{
                 right: 0;
                 top: 50%;
                 margin-top: -4.5px;
-                background: url(../img/faq_arrows.png) no-repeat 0 0;
+                background: url(../img/faq_arrows.png) no-repeat 0 -9px;
+            }
+
+            &.collapsed {
+                margin-bottom: 0;
+
+                &:after {
+                    background-position: 0 0;
+                }
             }
         }
 
         .answer {
             font-size: 16px;
             line-height: 1.7;
+            color: white;
+        }
+
+        &.opened {
+            background: #25a9df;
+
+            .question {
+                color: white;
+            }
+        }
+    }
+
+    #all_faq {
+        margin: 50px auto 0;
+        color: #0d264e;
+
+        &:hover {
             color: white;
         }
     }
