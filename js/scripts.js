@@ -293,9 +293,17 @@ particlesJS('particles-js-2',
 
     $('.all_people').click(function(e) {
         e.preventDefault();
-        $(this).fadeOut(function() {
-            $(this).next().fadeIn();
-        });
+        if($(window).width()>767){
+            $(this).fadeOut(0,function() {
+                $(this).next().slideDown(400);
+            });
+        }
+        else{
+            $(this).fadeOut(0,function() {
+                $(this).prev().slideDown(400);
+                $(this).next().slideDown(400);
+            });
+        }
     });
 
     $('.news_item').click(function() {
@@ -305,8 +313,8 @@ particlesJS('particles-js-2',
 
     $('#all_news').click(function(e) {
         e.preventDefault();
-        $(this).fadeOut(function() {
-            $(this).next().fadeIn();
+        $(this).fadeOut(0,function() {
+            $(this).next().slideDown(400);
         });
     });
 
@@ -320,10 +328,190 @@ particlesJS('particles-js-2',
 
     $('#all_faq').click(function(e) {
         e.preventDefault();
-        $(this).fadeOut(function() {
-            $(this).next('.all_faqs').fadeIn();
+        $(this).fadeOut(0,function() {
+            $(this).next('.all_faqs').slideDown(400);
         });
     });
+    
+    var ctx = document.getElementById("myChart").getContext("2d");
+    
+   var data = {
+        datasets: [{
+            data: [40, 30, 9,8,7,3,3],
+            borderWidth:0,
+            backgroundColor: [
+                '#646285',
+               '#ed5143',
+               '#4d5f6e',
+               '#5b9ed6',
+                '#4476a0',
+                '#e96151',
+                '#5b9ed6'
+            ]
+        }],
+
+        // These labels appear in the legend and in the tooltips when hovering different arcs
+        labels: [
+            ' ICO',
+            ' Founders',
+            ' Reserve fund',
+            ' Pre-ICO',
+            ' Advisers',
+            ' Bounty',
+            ' Development'
+        ]
+    };
+    
+    
+    
+    
+    
+    
+    var flag_open_lang = true;
+    $('.lang-wrapp').click(function(){
+        if(flag_open_lang){
+            $('.lang-list').fadeIn(300);
+            flag_open_lang = false;
+        }
+        else{
+            $('.lang-list').fadeOut(300);
+            flag_open_lang = true;
+        }
+        
+    })
+    
+    
+    
+    
+    var glabal_flag_for_counter = true;
+    var win = $(window);
+    var scrFunc = function () {
+        var t = win.scrollTop(),
+            e = win.height();
+        $("[data-anim], .canvas-pos").each(function (n, i) {
+            var r = $(i).offset().top,
+                s = t + .9 * e;
+            s > r ? $(i).attr("data-anim", "true") : true;
+            
+            if ($(".canvas-pos").attr('data-anim') == 'true' && glabal_flag_for_counter){ 
+            
+                var myDoughnutChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: data,
+                    options: {
+                         responsive: true,
+                        cutoutPercentage:55,
+                         animation: {
+                              duration:2000
+                         },
+                       
+                        legend: {
+                            display: false,
+                        }
+
+                    }
+                });
+                glabal_flag_for_counter = false;
+            }
+            
+        })
+    }
+    
+    
+    $('.menu-list li a').click(function (e) {
+        e.preventDefault;
+        if ($(this).attr('href')) {
+            var el = $(this).attr('href');
+            $('body, html').animate({
+                scrollTop: $(el).offset().top
+            }, 700);
+            return false;
+        }
+    });
+    
+  
+
+    var menu_selector = ".menu-list"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+    function onScroll_menu(){
+        var scroll_top = $(document).scrollTop();
+        $(menu_selector + " a").each(function(){
+            var hash = $(this).attr("href");
+            var target = $(hash);
+            if (target.position().top - 75 <= scroll_top && target.position().top + target.outerHeight() > scroll_top - 75) {
+                $(menu_selector + " li.active").removeClass("active");
+                $(this).parent().addClass("active");
+            } else {
+                $(this).parent().removeClass("active");
+            }
+        });
+    }
+    
+    scrFunc();
+    $(window).scroll(function () {
+        onScroll_menu();
+        scrFunc();
+        if($(window).width()>991){
+            if ($(window).scrollTop() > 0) {
+                $(".header-nav").addClass("scrolled");
+            }
+            else{
+                $(".header-nav").removeClass("scrolled");
+            }
+        }
+        else{
+            $(".header-nav").removeClass("scrolled");
+        }
+        
+        
+        if ($(window).scrollTop() >= 300) {
+            $(".every-time-scrolled").addClass("js-fixed");
+            $(".every-time-scrolled").addClass("scrolled");
+        }
+        else{
+            $(".every-time-scrolled").removeClass("js-fixed");
+        }
+    });
+    
+    if($(window).width()>991){
+        if ($(window).scrollTop() > 0) {
+            $(".header-nav").addClass("scrolled");
+        }
+        else{
+            $(".header-nav").removeClass("scrolled");
+        }
+    
+    }
+    else{
+        $(".header-nav").removeClass("scrolled");
+    }
+    
+    if ($(window).scrollTop() >= 300) {
+        $(".every-time-scrolled").addClass("scrolled");
+        $(".every-time-scrolled").addClass("js-fixed");
+    }
+    else{
+        $(".every-time-scrolled").removeClass("js-fixed");
+    }
+
+    
+    $('.iframe').click(function(){
+        $('#modal-movie').modal('show');
+        $('iframe').attr({'src':'https://www.youtube.com/embed/Io6e_dsLnVE'});
+    });
+    
+    $('#modal-movie').on('hidden.bs.modal', function () {
+        $('iframe').attr({'src':''});
+    })
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -348,8 +536,36 @@ function counter() {
     var hours = parseInt((diff - (days * 86400))/3600);
     var minutes = parseInt((diff % 3600) / 60);
     var seconds = parseInt(diff % 60);
-    $('.main-counter-wr .d').text(days);
-    $('.main-counter-wr .h').text(hours);
-    $('.main-counter-wr .m').text(minutes);
-    $('.counter-velue .s').text(seconds);
+    
+    if(days < 10){
+        $('.main-counter-wr .d').text('0'+days);
+    }
+    else{
+        $('.main-counter-wr .d').text(days);
+    }
+    if(hours < 10){
+        $('.main-counter-wr .h').text('0'+hours);
+    }
+    else{
+        $('.main-counter-wr .h').text(hours);
+    }
+    if(minutes < 10){
+       $('.main-counter-wr .m').text('0'+minutes);
+    }
+    else{
+       $('.main-counter-wr .m').text(minutes);
+    }
+    if(seconds < 10){
+       $('.counter-velue .s').text('0'+seconds);
+    }
+    else{
+        $('.counter-velue .s').text(seconds);
+    }
+    
+    
+    
+    
+   
+    
+    
 }

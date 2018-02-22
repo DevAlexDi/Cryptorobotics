@@ -15,14 +15,75 @@
 
 <body> 
     
-    <section class="sec-lvl-1">
+    
+    
+    <section class="sec-lvl-1" id="product">
+        <div class="header-nav scrolled every-time-scrolled">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="flex-menu">
+                            <div class="side left-side">
+
+                            </div>
+                            <div class="side mid-side">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixed-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="fixed-menu">
+                                    <ul class="menu-list">
+                                        <li class="first-itm active">
+                                            <a href="#product">Продукт</a>
+                                        </li>
+                                        <li class="first-itm">
+                                            <a href="#team">Команда</a>
+                                        </li>
+                                        <li class="first-itm">
+                                            <a href="#news">Пресса</a>
+                                        </li>
+                                        <li class="first-itm">
+                                            <a href="#faqs">FAQ</a>
+                                        </li>
+                                        <li class="first-itm">
+                                            <a href="#contacts">Контакты</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="side right-side">
+                                <div class="flex-lang">
+                                    <div class="lang-wrapp">
+                                        <div class="lang">Ru</div>
+                                        <div class="lang-list">
+                                            <a href="#" class="active">Ru</a>
+                                            <a href="#">En</a>
+                                            <a href="#">fr</a>
+                                        </div>
+                                    </div>
+                                    <a class="login" href="#">войти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-nav">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="flex-menu">
                             <div class="side left-side">
-                                <img src="img/logo-nav.png" class="img-responsive" alt="">
+                                <div class="rel-wr">
+                                    <img src="img/logo-nav.png" class="img-responsive" alt="">
+                                    <div class="abs-img">
+                                        <img src="img/gogo-black.png" class="img-responsive" alt="">
+                                    </div>
+                                </div>
                             </div>
                             <div class="side mid-side">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -33,21 +94,22 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="menu">
                                     <ul class="menu-list">
-                                        <li class="first-itm">
-                                            <a href="#sec-lvl-1">Продукт</a>
+                                        <li class="first-itm active">
+                                            <a href="#product">Продукт</a>
                                         </li>
                                         <li class="first-itm">
-                                            <a href="#about">Команда</a>
+                                            <a href="#team">Команда</a>
                                         </li>
                                         <li class="first-itm">
-                                            <a href="#sec-lvl-7">Пресса</a>
+                                            <a href="#news">Пресса</a>
                                         </li>
                                         <li class="first-itm">
-                                            <a href="#team">Контакты</a>
+                                            <a href="#faqs">FAQ</a>
                                         </li>
                                         <li class="first-itm">
-                                            <a href="#team">FAQ</a>
+                                            <a href="#contacts">Контакты</a>
                                         </li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -56,8 +118,9 @@
                                     <div class="lang-wrapp">
                                         <div class="lang">Ru</div>
                                         <div class="lang-list">
-                                            <span>En</span>
-                                            <span>fr</span>
+                                            <a href="#" class="active">Ru</a>
+                                            <a href="#">En</a>
+                                            <a href="#">fr</a>
                                         </div>
                                     </div>
                                     <a class="login" href="#">войти</a>
@@ -75,7 +138,8 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
                             <div class="iframe-wr">
-                                <iframe src="https://www.youtube.com/embed/vWaRiD5ym74"></iframe>
+                                <div class="iframe"></div>
+                                
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
@@ -93,7 +157,7 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
                             <div class="flex-counter">
-                                <p class="text-start">ICO стартует<br>через:</p>
+                                <p class="text-start">ICO стартует через:</p>
                                 <div class="main-counter-wr">
                                     <span class="counter-velue">
                                         <span class="d">13</span>
@@ -110,7 +174,7 @@
                                         <span class="desc">минут</span>
                                     </span>
                                     :
-                                    <span class="s counter-velue">
+                                    <span class="s for-w-s counter-velue">
                                         <span class="s">56</span>
                                         <span class="desc">секунд</span>
                                     </span>
@@ -120,7 +184,7 @@
                         <div class="col-lg-7 col-md-6">
                             <div class="flex-buttons">
                                 <a class="button-style" href="#">Скачать терминал</a>
-                                <span class="button-style">инвестировать</span>
+                                <span class="button-style second-b">инвестировать</span>
                             </div>
                         </div>
                     </div>
@@ -134,16 +198,36 @@
                             <div class="flex-form-soc">
                                 <div class="left-side">
                                     <div class="abs-socials">
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/bitcoin.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/twitter.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/medium.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/slack.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/telegram.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/facebook.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/youtube.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/instagram.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/reddit.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/github.svg" class="img-responsive" alt="">
+                                        </a>
                                     </div>
                                     <div class="plus-wr">
                                         <div class="plus"></div>
@@ -203,7 +287,9 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="img text-center"></div>
+                    <div class="img text-center">
+                        
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <p>CryptoRobotics - это бесплатный кроссплатформенный торговый терминал с поддержкой устройств, работающих на Windows, Mac OS, iOS и Android - персональных компьютеров, планшетов и смартфонов. Терминал адаптирован для всех криптовалютных бирж, поддерживающих API.</p>
@@ -219,10 +305,52 @@
             </div>
         </div>
     </section>
-    <section class="sec-slider-realiz">
+    <section class="diagram">
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="dia-head">
+                        <h4>Токен-план</h4>
+                        <p>Схема распределения Robo-токенов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <ul class="list-pr">
+                        <li class="color-1">ICO (40%)</li>
+                        <li class="color-2">Founders (30%)</li>
+                        <li class="color-3">Reserve fund (9%)</li>
+                        <li class="color-4">Pre-ICO (8%)</li>
+                        <li class="color-5">Advisers (7%)</li>
+                        <li class="color-6">Bounty (3%)</li>
+                        <li class="color-7">Development (3%)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="canvas-pos">
+                        <canvas id="myChart" height="270px"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12">
+                    <div class="style-text-diag">
+                        <p>Эмиссия токенов: 120 000 000. Единовременная эмиссия, дополнительная эмиссия не предусмотрена.<br> Токены выполнены по стандарту Стандарт ERC-20.</p>
+                        <p>Выпущено токенов: 57 600 000.<br>CryptoRobotics выведет из оборота токены, нераспределенные по итогам ICO.</p>
+                        <p>Цена за 1 токен = 0,0001 ETH</p>
+                        <div class="for-button-pos">
+                            <a href="#" class="button-style-2">Инвестировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sec-slider-realiz">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 for-none-padd-xs">
                     <h4>Этапы реализации проекта</h4>
                     <div class="for-padd-slider">
                         <div class="slider-realiz-init">
@@ -239,16 +367,28 @@
                                 <p class="desc">Терминал: версия для iOS и версия для Android</p>
                             </div>
                             <div class="one-slide">
-                                <p class="date">Сентябрь 2018 г.</p>
+                                <p class="date">Август 2018 г.</p>
                                 <p class="desc">Автоследование</p>
                             </div>
                             <div class="one-slide">
                                 <p class="date">Сентябрь 2018 г.</p>
-                                <p class="desc">Автоследование</p>
+                                <p class="desc">Конструктор роботов и маркет роботов</p>
                             </div>
                             <div class="one-slide">
-                                <p class="date">Сентябрь 2018 г.</p>
-                                <p class="desc">Автоследование</p>
+                                <p class="date">Февраль 2019 г.</p>
+                                <p class="desc">Демо-версия Trader experience</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Июнь 2019 г.</p>
+                                <p class="desc">Релиз Trader experience</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Август 2020 г.</p>
+                                <p class="desc">Демо-версия роботов на Искусственном интеллекте</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Декабрь 2020 г.</p>
+                                <p class="desc">Релиз роботов на Искусственном интеллекте</p>
                             </div>
                         </div>
                     </div>
@@ -308,6 +448,9 @@
                         </div>
                     </div>
                 </div>
+                
+            </div>
+            <div class="row for-hide-xs">
                 <div class="col-sm-6 col-md-3">
                     <div class="human_wrap">
                         <div class="img" style="background-image: url(img/human.jpg)"></div>
@@ -353,7 +496,6 @@
                     </div>
                 </div>
             </div>
-
             <span href="#" class="button-style all_people">Показать всех</span>
 
             <div class="row" style="display: none">
@@ -422,8 +564,12 @@
                         <p class="big">Гарант</p>
                         <p>Инвестор-практик, инфобизнесмен, член евразийского совета по малому и среднему бизнесу в области Блокчейн, эксперт в области криптовалют, владелец нескольких успешных бизнесов, автор курса «Криптовалюты за 12 часов»: более 1 000 обучившихся по его программе в мире.</p>
                         <div class="soc">
-                            <a href="#" target="_blank"><img src="" alt=""></a>
-                            <a href="#" target="_blank"><img src="" alt=""></a>
+                             <a href="#" target="_blank">
+                                <img src="img/icons/facebook.svg" class="img-responsive" alt="">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="img/icons/telegram.svg" class="img-responsive" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -659,7 +805,7 @@
     <section class="sec-slider-realiz conf-sec">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 for-none-padd-xs">
                     <h4>Конференции</h4>
                     <div class="for-padd-slider">
                         <div class="slider-realiz-init">
@@ -676,16 +822,28 @@
                                 <p class="desc">Терминал: версия для iOS и версия для Android</p>
                             </div>
                             <div class="one-slide">
-                                <p class="date">Сентябрь 2018 г.</p>
+                                <p class="date">Август 2018 г.</p>
                                 <p class="desc">Автоследование</p>
                             </div>
                             <div class="one-slide">
                                 <p class="date">Сентябрь 2018 г.</p>
-                                <p class="desc">Автоследование</p>
+                                <p class="desc">Конструктор роботов и маркет роботов</p>
                             </div>
                             <div class="one-slide">
-                                <p class="date">Сентябрь 2018 г.</p>
-                                <p class="desc">Автоследование</p>
+                                <p class="date">Февраль 2019 г.</p>
+                                <p class="desc">Демо-версия Trader experience</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Июнь 2019 г.</p>
+                                <p class="desc">Релиз Trader experience</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Август 2020 г.</p>
+                                <p class="desc">Демо-версия роботов на Искусственном интеллекте</p>
+                            </div>
+                            <div class="one-slide">
+                                <p class="date">Декабрь 2020 г.</p>
+                                <p class="desc">Релиз роботов на Искусственном интеллекте</p>
                             </div>
                         </div>
                     </div>
@@ -837,16 +995,36 @@
                             <div class="flex-form-soc">
                                 <div class="left-side">
                                     <div class="abs-socials">
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
-                                        <div class="one-soc"></div>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/bitcoin.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/twitter.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/medium.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/slack.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/telegram.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/facebook.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/youtube.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/instagram.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/reddit.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#" class="one-soc">
+                                            <img src="img/icons/github.svg" class="img-responsive" alt="">
+                                        </a>
                                     </div>
                                     <div class="plus-wr">
                                         <div class="plus"></div>
@@ -884,7 +1062,15 @@
     </footer>
     
     
-    
+    <div class="modal modal-sec fade" id="modal-movie">
+        <div class="modal-dialog">
+            <div class="modal-contant">
+                <div class="modal-body">
+                    <iframe></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     
@@ -903,6 +1089,9 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/particles.min.js"></script>
