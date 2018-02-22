@@ -275,7 +275,7 @@
         margin: 0 10px 20px 10px;
     }
     .form-and-soc .flex-form-soc .left-side .abs-socials{
-        justify-content:space-around;
+       
     }
     
     .form-and-soc .flex-form-soc .left-side .abs-socials {
@@ -371,6 +371,9 @@
     .sec-lvl-1 .header-nav.every-time-scrolled .flex-menu .side.right-side .flex-lang .lang-wrapp .lang-list {
         -webkit-transform: translate(-50%, 16px);
         transform: translate(-50%, 19px);
+    }
+    .sec-lvl-1 .header-nav .flex-menu .side.right-side .flex-lang .login{
+        padding: 13px 36px;
     }
 }
 @media (max-width: 500px){
