@@ -300,17 +300,18 @@ body{
                 top: 5px;
             }
         }
-
-        &:hover {
-            .img_wrap {
-                .img {
-                    &:after {
-                        opacity: 0;
+        .new-hover{
+            &:hover {
+                .img_wrap {
+                    .img {
+                        &:after {
+                            opacity: 0;
+                        }
                     }
                 }
-            }
-            .title {
-                color: #25a9df;
+                .title {
+                    color: #25a9df;
+                }
             }
         }
     }

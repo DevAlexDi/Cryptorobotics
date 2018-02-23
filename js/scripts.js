@@ -368,7 +368,8 @@ particlesJS('particles-js-2',
     
     
     var flag_open_lang = true;
-    $('.lang-wrapp').click(function(){
+    $('.lang-wrapp').click(function(e){
+        e.stopPropagation();
         if(flag_open_lang){
             $('.lang-list').fadeIn(300);
             flag_open_lang = false;
@@ -378,7 +379,13 @@ particlesJS('particles-js-2',
             flag_open_lang = true;
         }
         
-    })
+    });
+    
+    $('body,html').click(function(e){
+        e.stopPropagation();
+        $('.lang-list').fadeOut(300);
+        flag_open_lang = true;
+    });
     
     
     
