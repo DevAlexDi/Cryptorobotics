@@ -13,10 +13,10 @@ $(document).ready(function () {
    {
   "particles": {
     "number": {
-      "value": 140,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 500
       }
     },
     "color": {
@@ -38,8 +38,8 @@ $(document).ready(function () {
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 0.41688713582503595,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -66,7 +66,7 @@ $(document).ready(function () {
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -83,11 +83,11 @@ $(document).ready(function () {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -125,10 +125,10 @@ particlesJS('particles-js-2',
     {
   "particles": {
     "number": {
-      "value": 140,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 500
       }
     },
     "color": {
@@ -150,8 +150,8 @@ particlesJS('particles-js-2',
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 0.41688713582503595,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -178,7 +178,7 @@ particlesJS('particles-js-2',
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -195,11 +195,11 @@ particlesJS('particles-js-2',
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
