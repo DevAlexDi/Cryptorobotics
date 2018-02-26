@@ -1,14 +1,26 @@
+
 @font-face {
     font-family: "FiraSans";
-    src: url("../fonts/FiraSans-Regular.ttf");
+    src: url(../fonts/FiraSans-Regular.eot);
+    src: local('☺'), url('../fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
     font-family: "FiraSans-Bold";
-    src: url("../fonts/FiraSans-Bold.ttf");
+    src: url(../fonts/FiraSans-Bold.eot);
+    src: local('☺'), url('../fonts/FiraSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
     font-family: "FiraSans-BoldItalic";
-    src: url("../fonts/FiraSans-BoldItalic.ttf");
+    src: url(../fonts/FiraSans-BoldItalic.eot);
+    src: local('☺'), url('../fonts/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{

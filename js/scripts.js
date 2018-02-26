@@ -246,32 +246,79 @@ particlesJS('particles-js-2',
     }
   );    
     
-    $('.slider-realiz-init').slick({
-        dots: false,
-        arrows:true,
-        infinite: false,
-        slidesToShow: 4,
-        slidesToScroll:1,
-         responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                 slidesToShow: 2,
-                slidesToScroll:1
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll:1
-              }
-            }
-        ]
     
+    var slider_resize_flag;
+    
+    
+    if($(window).width() <= 767){
+         $('.slider-realiz-init').slick({
+            dots: false,
+            arrows:true,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll:1,
+             responsive: [
+                {
+                  breakpoint: 992,
+                  settings: {
+                     slidesToShow: 2,
+                    slidesToScroll:1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll:1
+                  }
+                }
+            ]
+
+        });
+        slider_resize_flag = false;
+    }
+    else{
+        slider_resize_flag = true;   
+    }
+    $(window).resize(function(){
+        if($(window).width() <= 767 && slider_resize_flag){
+            $('.slider-realiz-init').slick({
+                dots: false,
+                arrows:true,
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll:1,
+                 responsive: [
+                    {
+                      breakpoint: 992,
+                      settings: {
+                         slidesToShow: 2,
+                        slidesToScroll:1
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll:1
+                      }
+                    }
+                ]
+
+            });
+            slider_resize_flag = false;
+        }
+        else if($(window).width() > 767 && !slider_resize_flag){
+            $('.slider-realiz-init').slick('unslick');
+            slider_resize_flag = true;   
+        }
     });
     
     
+    /*
+   
+    
+    */
     
     //==============================================
 
@@ -382,7 +429,7 @@ particlesJS('particles-js-2',
     });
     
     $('body,html').click(function(e){
-        e.stopPropagation();
+   
         $('.lang-list').fadeOut(300);
         flag_open_lang = true;
     });
