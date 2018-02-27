@@ -71,27 +71,30 @@
          background:#0570c3;
     }
     
+    
 }
 
 
 .for-w-s{
         width: 59px;
     display: block;
+    
 }
 
 .sec-lvl-1{
     background-color: #0d264e;
-   
+   position: relative;
     .header-nav{
         border-bottom: 1px solid #004996;
         background-color: #0d264e;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 100;
         width: 100%;
         transition: 0.3s;
         &.scrolled{
+            position: fixed;
             background: #fff;
             border: none;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
@@ -974,37 +977,37 @@ button{
             }
             &.color-1{
                 &:before{
-                    background: #646285;
+                    background: #e91d62;
                 }
             }
             &.color-2{
                 &:before{
-                    background: #ffffff;
+                    background: #2095f2;
                 }
             }
             &.color-3{
                 &:before{
-                    background: #ed5143;
+                    background: #00bcd5;
                 }
             }
             &.color-4{
                 &:before{
-                    background: #004996;
+                    background: #9c28b1;
                 }
             }
             &.color-5{
                 &:before{
-                    background: #ffc636;
+                    background: #019587;
                 }
             }
             &.color-6{
                 &:before{
-                    background: #a51c2e;
+                    background: #3e50b4;
                 }
             }
             &.color-7{
                 &:before{
-                    background: #00ada9;
+                    background: #4baf4f;
                 }
             }
         }
@@ -1163,5 +1166,17 @@ button{
         &:after{
             opacity: 0;
         }
+    }
+}
+.new-baner-blue{
+    background: linear-gradient(90deg, #00cdfe, #00529d);
+    p{
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "FiraSans-Bold";
+        color: #fff;
+        font-size: 24px;
+        padding: 19px 0;
     }
 }

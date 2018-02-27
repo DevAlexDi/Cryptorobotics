@@ -375,13 +375,13 @@ particlesJS('particles-js-2',
             data: [40, 30, 9,8,7,3,3],
             borderWidth:0,
             backgroundColor: [
-                '#646285',
-               '#ffffff',
-               '#ed5143',
-               '#004996',
-                '#ffc636',
-                '#a51c2e',
-                '#00ada9'
+                '#e91d62',
+               '#2095f2',
+               '#00bcd5',
+               '#9c28b1',
+                '#019587',
+                '#3e50b4',
+                '#4baf4f'
             ]
         }],
 
@@ -493,7 +493,7 @@ particlesJS('particles-js-2',
         onScroll_menu();
         scrFunc();
         if($(window).width()>991){
-            if ($(window).scrollTop() > 0) {
+            if ($(window).scrollTop() > 74) {
                 $(".header-nav").addClass("scrolled");
             }
             else{
@@ -571,7 +571,7 @@ particlesJS('particles-js-2',
 });
 
 function counter() {
-    var end = 1519819200;
+    var end = 1519880000;
     var now = Math.round(new Date().getTime() / 1000);
     var diff = end - now;
     var days = parseInt(diff/86400);
@@ -579,29 +579,32 @@ function counter() {
     var minutes = parseInt((diff % 3600) / 60);
     var seconds = parseInt(diff % 60);
     
-    if(days < 10){
-        $('.main-counter-wr .d').text('0'+days);
-    }
-    else{
-        $('.main-counter-wr .d').text(days);
-    }
-    if(hours < 10){
-        $('.main-counter-wr .h').text('0'+hours);
-    }
-    else{
-        $('.main-counter-wr .h').text(hours);
-    }
-    if(minutes < 10){
-       $('.main-counter-wr .m').text('0'+minutes);
-    }
-    else{
-       $('.main-counter-wr .m').text(minutes);
-    }
-    if(seconds < 10){
-       $('.counter-velue .s').text('0'+seconds);
-    }
-    else{
-        $('.counter-velue .s').text(seconds);
+    if(days >=0||hours>=0||minutes>=0||seconds>=0){
+        if(days < 10){
+            $('.main-counter-wr .d').text('0'+days);
+        }
+        else {
+            $('.main-counter-wr .d').text(days);
+        }
+        if(hours < 10){
+            $('.main-counter-wr .h').text('0'+hours);
+        }
+        else{
+            $('.main-counter-wr .h').text(hours);
+        }
+
+        if(minutes < 10){
+           $('.main-counter-wr .m').text('0'+minutes);
+        }
+        else{
+           $('.main-counter-wr .m').text(minutes);
+        }
+        if(seconds < 10){
+           $('.counter-velue .s').text('0'+seconds);
+        }
+        else{
+            $('.counter-velue .s').text(seconds);
+        }
     }
     
     

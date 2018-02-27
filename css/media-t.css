@@ -1,3 +1,84 @@
-@media (max-width: 1199px){#man .man_text{padding-left:50px;padding-top:10px}}@media (max-width: 991px){#man .man_text{padding-left:0;padding-top:0}#rates .rate{margin-bottom:30px}}@media (max-width: 767px){#solution{padding:35px 0}#solution h2,#solution .epigraph{margin-bottom:25px}#man{padding:35px 0}#man .man_text{padding-top:30px}#man .man_text h5,#man .man_text p{margin-bottom:20px}#man .man_text .soc{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.people{padding:35px 0}.people h2{margin-bottom:30px}.people .all_people{margin-top:0}#news{padding:35px 0}#news h2{margin-bottom:30px}#news #all_news{margin-top:0}#rates{padding:35px 0}#rates h2{margin-bottom:30px}#faqs{padding:35px 0}#faqs h2{margin-bottom:30px}#faqs #all_faq{margin-top:30px}#contacts{padding:35px 0 40px}#contacts h2{margin-bottom:25px}#contacts p{margin-bottom:0}#contacts .icon{margin-top:30px}footer{padding:35px 0}footer .menu{margin-top:35px;display:block;text-align:center}}
+@media (max-width: 1199px) {
+  #man .man_text {
+    padding-left: 50px;
+    padding-top: 10px; } }
+@media (max-width: 991px) {
+  #man .man_text {
+    padding-left: 0;
+    padding-top: 0; }
+
+  #rates .rate {
+    margin-bottom: 30px; } }
+@media (max-width: 767px) {
+  #solution {
+    padding: 35px 0; }
+
+  #solution h2, #solution .epigraph {
+    margin-bottom: 25px; }
+
+  #man {
+    padding: 35px 0; }
+
+  #man .man_text {
+    padding-top: 30px; }
+
+  #man .man_text h5, #man .man_text p {
+    margin-bottom: 20px; }
+
+  #man .man_text .soc {
+    justify-content: center; }
+
+  .people {
+    padding: 35px 0; }
+
+  .people h2 {
+    margin-bottom: 30px; }
+
+  .people .all_people {
+    margin-top: 0; }
+
+  #news {
+    padding: 35px 0; }
+
+  #news h2 {
+    margin-bottom: 30px; }
+
+  #news #all_news {
+    margin-top: 0; }
+
+  #rates {
+    padding: 35px 0; }
+
+  #rates h2 {
+    margin-bottom: 30px; }
+
+  #faqs {
+    padding: 35px 0; }
+
+  #faqs h2 {
+    margin-bottom: 30px; }
+
+  #faqs #all_faq {
+    margin-top: 30px; }
+
+  #contacts {
+    padding: 35px 0 40px; }
+
+  #contacts h2 {
+    margin-bottom: 25px; }
+
+  #contacts p {
+    margin-bottom: 0; }
+
+  #contacts .icon {
+    margin-top: 30px; }
+
+  footer {
+    padding: 35px 0; }
+
+  footer .menu {
+    margin-top: 35px;
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=media-t.css.map */
