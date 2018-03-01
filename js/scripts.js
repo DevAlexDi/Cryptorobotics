@@ -573,13 +573,14 @@ particlesJS('particles-js-2',
 function counter() {
     var end = 1519880000;
     var now = Math.round(new Date().getTime() / 1000);
-    var diff = end - now;
-    var days = parseInt(diff/86400);
-    var hours = parseInt((diff - (days * 86400))/3600);
-    var minutes = parseInt((diff % 3600) / 60);
-    var seconds = parseInt(diff % 60);
-    
-    if(days >=0||hours>=0||minutes>=0||seconds>=0){
+    if (now < end) {
+        var diff = end - now;
+        var days = parseInt(diff/86400);
+        var hours = parseInt((diff - (days * 86400))/3600);
+        var minutes = parseInt((diff % 3600) / 60);
+        var seconds = parseInt(diff % 60);
+
+        
         if(days < 10){
             $('.main-counter-wr .d').text('0'+days);
         }
@@ -605,8 +606,14 @@ function counter() {
         else{
             $('.counter-velue .s').text(seconds);
         }
+        
     }
-    
+    else {
+        $('.main-counter-wr .d').text('00');
+        $('.main-counter-wr .h').text('00');
+        $('.main-counter-wr .m').text('00');
+        $('.counter-velue .s').text('00');
+    }
     
     
     
