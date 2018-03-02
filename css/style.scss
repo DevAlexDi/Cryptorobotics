@@ -396,6 +396,7 @@
                     transition: 0.3s;
                     transform: translate(-50%,-50%);
                     background: rgba(255,255,255,0.7);
+                    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
                 }
                 svg{
                     position: relative;
@@ -1179,4 +1180,13 @@ button{
         font-size: 24px;
         padding: 19px 0;
     }
+}
+#solution h2{
+    margin-bottom: 70px;
+}
+.people .human_wrap .desc .text{
+    font-size: 12px;
+}
+.people .human_wrap .desc{
+    padding: 20px 5px;
 }

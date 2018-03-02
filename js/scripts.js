@@ -476,7 +476,7 @@ particlesJS('particles-js-2',
     var menu_selector = ".menu-list"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
     function onScroll_menu(){
         var scroll_top = $(document).scrollTop();
-        $(menu_selector + " a").each(function(){
+        $(menu_selector + " .for-js-code").each(function(){
             var hash = $(this).attr("href");
             var target = $(hash);
             if (target.position().top - 75 <= scroll_top && target.position().top + target.outerHeight() > scroll_top - 75) {
@@ -571,7 +571,7 @@ particlesJS('particles-js-2',
 });
 
 function counter() {
-    var end = 1519880000;
+    var end = 1526774400;
     var now = Math.round(new Date().getTime() / 1000);
     if (now < end) {
         var diff = end - now;
