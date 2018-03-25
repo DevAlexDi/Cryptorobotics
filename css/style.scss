@@ -61,7 +61,7 @@
     font-size: 14px;
     background:#0052fb;
     font-family: "FiraSans-Bold";
-    background: #25a9df;
+
     border: none;
     border-radius: 6px;
     transition: 0.3s;
@@ -975,6 +975,15 @@ button{
     padding: 85px 0 70px 0;
     .dia-head{
         text-align: center;
+        .text-we-can{
+            font-family: "FiraSans-Bold";
+            font-size: 30px;
+            margin-bottom: 80px;
+            text-align: center;
+            color: #0052fb;
+           text-shadow: 0px 0px 10px #0052fb;
+            letter-spacing: 1px;
+        }
         h4{
             color: #fff;
             font-size: 36px;
@@ -984,7 +993,7 @@ button{
         }
         p{
             font-size: 20px;
-            color: #25a9df;
+            color: #518aff;
             margin-bottom: 60px;
         }
     }
@@ -995,7 +1004,7 @@ button{
             position: relative;
             padding-left: 40px;
             font-size: 14px;
-            color: #25a9df;
+            color: #518aff;
             margin-bottom: 20px;
             &:before{
                 content: "";
@@ -1045,7 +1054,7 @@ button{
     }
     .style-text-diag{
         p{
-            color: #25a9df;
+            color: #fff;
             font-size: 16px;
         }
     }
@@ -1103,10 +1112,12 @@ button{
     border-radius: 6px;
     width: 52px;
     height: 52px;
+    color: #0052fb;
     &:hover{
         background-color: #0570c3;
     }
 }
+
 #faqs .faq .question:after{
     top: 17px;
 }
@@ -1381,4 +1392,35 @@ button{
 .for-flex-white-paper-new{
     display: flex;
     justify-content: center;
+}
+.people h2{
+    color: #fff;
+}
+.people .human_wrap:before{
+    padding-top: 132%;
+}
+.people .human_wrap .img{
+    bottom: auto;
+    height: 265px;
+}
+.people .human_wrap{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+}
+.flex-icons-human{
+    padding-top: 0;
+}
+.people .human_wrap .desc{
+    background: #001a6a;
+    .function{
+        margin: 0;
+        text-align: center;
+        color: #518aff;
+        font-size: 14px;
+    }
+}
+#man .man_text p{
+    color: #fff;
+    &.big{
+        color: #518aff;
+    }
 }
