@@ -4,6 +4,9 @@
 .flex-icons-human a {
   background-color: #0052fb; }
 
+.people .human_wrap .desc .name {
+  margin-bottom: 5px; }
+
 .people .human_wrap .desc .text {
   font-size: 14px;
   padding: 0 5px;
@@ -31,6 +34,18 @@
       text-align: center; }
       #work_with .work_with_wrap .work_logo img {
         max-width: 100%; }
+
+#news h2 {
+  color: white; }
+
+#news .news_wrap {
+  display: flex;
+  justify-content: space-between; }
+  #news .news_wrap .news_item {
+    width: 33.3%;
+    background: white; }
+    #news .news_wrap .news_item:nth-child(2) {
+      margin: 0 30px 30px; }
 
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {

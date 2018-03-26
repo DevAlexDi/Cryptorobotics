@@ -4,6 +4,9 @@
 .flex-icons-human a {
   background-color: #0052fb;
 }
+.people .human_wrap .desc .name {
+  margin-bottom: 5px;
+}
 .people .human_wrap .desc .text {
   font-size: 14px;
   padding: 0 5px;
@@ -38,6 +41,24 @@
       img {
         max-width: 100%;
       }
+    }
+  }
+}
+
+#news h2 {
+  color: white;
+}
+
+#news .news_wrap {
+  display: flex;
+  justify-content: space-between;
+
+  .news_item {
+    width: 33.3%;
+    background: white;
+
+    &:nth-child(2) {
+      margin: 0 30px 30px;
     }
   }
 }
