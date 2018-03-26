@@ -24,6 +24,20 @@
          padding: 27px 7px;
             font-size: 14px;
     }
+    .sec-lvl-1 .header-nav .flex-menu .side.left-side {
+        width: 260px;
+    }
+    .sec-lvl-1 .header-nav .flex-menu .side.right-side {
+        width: 240px;
+    }
+    .sec-lvl-1 .header-nav .flex-menu .side.right-side .flex-lang .login{
+        margin-left: 13px;
+    }
+    .main-baner .desc-main-baner h2{
+        font-size: 29px;
+            margin-bottom: 31px;
+    }
+    
 }
 
 @media (max-width: 991px) {
@@ -253,6 +267,33 @@
     #solution{
         padding-top: 170px;
     }
+    .sec-lvl-1 .form-and-soc{
+        transform: translateY(100%);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media (max-width: 767px) {

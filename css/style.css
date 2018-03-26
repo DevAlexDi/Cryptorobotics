@@ -162,6 +162,8 @@
       }*/ }
       .sec-lvl-1 .header-nav.scrolled .flex-menu .side.right-side .flex-lang .lang-wrapp .lang-list {
         transform: translate(-50%, 27px); }
+      .sec-lvl-1 .header-nav.scrolled .flex-menu .side.mid-side .menu-list .first-itm a, .sec-lvl-1 .header-nav.scrolled .flex-menu .side.mid-side .menu-list .first-itm span {
+        padding: 27px 11px; }
     .sec-lvl-1 .header-nav.every-time-scrolled {
       display: none !important;
       position: fixed !important;
