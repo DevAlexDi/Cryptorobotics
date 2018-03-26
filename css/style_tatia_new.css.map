@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,uDAAwD;EACtD,WAAW,EAAE,MAAM;;AAErB,mBAAoB;EAClB,gBAAgB,EAAE,OAAO;;AAE3B,+BAAgC;EAC9B,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,MAAM;;AAEhB,iCAAkC;EAChC,aAAa,EAAE,IAAI;;AAMrB,yBAA0B;EACxB,qDAAsD;IACpD,KAAK,EAAE,GAAG",
+"sources": ["style_tatia_new.scss"],
+"names": [],
+"file": "style_tatia_new.css"
+}

@@ -1,0 +1,23 @@
+#solution .new-solution .flex-boxes-solution .one-box p {
+  font-weight: normal;
+}
+.flex-icons-human a {
+  background-color: #0052fb;
+}
+.people .human_wrap .desc .text {
+  font-size: 14px;
+  padding: 0 5px;
+  margin: 10px 0;
+}
+.people .human_wrap .desc .text p {
+  margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 767px) {
+  #solution .new-solution .flex-boxes-solution .one-box {
+    width: 50%;
+  }
+}
