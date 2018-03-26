@@ -35,7 +35,22 @@
 
   .main-baner .desc-main-baner h2 {
     font-size: 29px;
-    margin-bottom: 31px; } }
+    margin-bottom: 31px; }
+
+  .form-and-soc .flex-form-soc .left-side {
+    width: 37%; }
+
+  .form-and-soc .flex-form-soc .left-side .plus-wr {
+    left: -14px; }
+
+  .form-and-soc .flex-form-soc .right-side .button-style-2 {
+    margin-right: 5px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 25.5px; }
+
+  .form-and-soc .flex-form-soc .right-side .abs {
+    padding-left: 41px; } }
 @media (max-width: 991px) {
   .main-baner .desc-main-baner ul {
     margin-bottom: 30px; }
@@ -269,7 +284,22 @@
     font-size: 13px; }
 
   #solution {
-    padding-top: 305px; } }
+    padding-top: 305px; }
+
+  .form-and-soc .flex-form-soc .left-side {
+    height: auto; }
+
+  .form-and-soc .flex-form-soc .left-side .plus-wr {
+    left: 0; }
+
+  .form-and-soc .flex-form-soc .left-side {
+    overflow: visible; }
+
+  .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+    margin-right: 47px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 47px; } }
 @media (max-width: 767px) {
   .sec-lvl-1 .header-nav.every-time-scrolled .flex-menu .side.right-side {
     padding: 10px 0; }
@@ -695,7 +725,16 @@
     background-position: center; }
 
   #solution .new-solution .flex-boxes-solution .one-box {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+
+  .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+    margin-right: 40px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 40px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(7) {
+    margin-right: 40px; } }
 @media (max-width: 500px) {
   #solution .img {
     height: 172px; }
@@ -751,6 +790,18 @@
   .flex-icons-human a {
     margin: 0;
     margin-right: 5px;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+
+  .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+    margin-right: 17px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 17px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(7) {
+    margin-right: 17px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(10) {
+    margin-right: 17px; } }
 
 /*# sourceMappingURL=media.css.map */

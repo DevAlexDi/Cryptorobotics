@@ -39,7 +39,23 @@
         font-size: 29px;
         margin-bottom: 31px;
     }
-
+    .form-and-soc .flex-form-soc .left-side {
+        width: 37%;
+    }
+    .form-and-soc .flex-form-soc .left-side .plus-wr {
+    left: -14px;
+}
+    .form-and-soc .flex-form-soc .right-side .button-style-2 {
+    margin-right: 5px;
+}
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 25.5px;
+}
+    .form-and-soc .flex-form-soc .right-side .abs {
+        padding-left: 41px;
+    }
+   
+    
 }
 
 @media (max-width: 991px) {
@@ -299,7 +315,22 @@
     #solution {
         padding-top: 305px;
     }
-
+    .form-and-soc .flex-form-soc .left-side{
+        height: auto;
+    }
+    .form-and-soc .flex-form-soc .left-side .plus-wr {
+        left: 0;
+    }
+    .form-and-soc .flex-form-soc .left-side{
+        overflow: visible;
+    }
+    .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+    margin-right: 47px;
+}
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 47px;
+}
+    
 }
 
 @media (max-width: 767px) {
@@ -793,6 +824,15 @@
     #solution .new-solution .flex-boxes-solution .one-box{
         padding: 0 10px;
     }
+    .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+        margin-right: 40px;
+    }
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 40px;
+}
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(7){
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -875,9 +915,19 @@
         margin-bottom: 5px;
     }
 
-
-
-
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+    margin-right: 17px;
+}
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 17px;
+}
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(7){
+         margin-right: 17px;
+        
+    }
+    .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(10){
+        margin-right: 17px;
+    }
 
 
 }

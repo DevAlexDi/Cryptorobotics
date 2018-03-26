@@ -23,7 +23,7 @@
         background: #0052fb;
         transition: 0s;
         &:hover{
-            background: linear-gradient(180deg, #518aff, #0052fb);
+            background: linear-gradient(0deg, #518aff, #0052fb);
             color: #fff;
         
         }
@@ -617,9 +617,9 @@
                     margin-right: 25px;
                     cursor: pointer;
                    
-                    transition: 0.3s;
+                    transition: 0s;
                     &:hover{
-                        background-color: #0570c3;
+                        background: linear-gradient(0deg, #518aff, #0052fb);
                     }
                 }
             }
@@ -730,6 +730,10 @@
             .button-style-2{
                 padding: 18px 0;
                 background: #0052fb;
+                transition: 0s;
+                &:hover{
+                     background: linear-gradient(0deg, #518aff, #0052fb);
+                }
             }
             input::-webkit-input-placeholder{
                 color: #518aff;
@@ -1696,4 +1700,26 @@ button{
 .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc{
     margin-right: 28px;
 }
-
+.form-and-soc .flex-form-soc .left-side{
+    height: 80px;
+    width: 38%;
+}
+.form-and-soc{
+    padding: 30px 50px;
+}
+.form-and-soc .flex-form-soc .left-side .plus-wr{
+    left: -17px;
+}
+.form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 45px;
+}
+.form-and-soc .flex-form-soc .right-side .button-style-2{
+    margin-right: 9px;
+}
+.form-and-soc .flex-form-soc{
+    align-items: center;
+}
+.form-and-soc .flex-form-soc .left-side .plus-wr .plus{
+    width: 52px;
+    height: 52px;
+}
