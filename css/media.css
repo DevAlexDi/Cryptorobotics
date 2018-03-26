@@ -752,7 +752,10 @@
     margin-right: 40px; }
 
   .for-padd-slider .one-slide .desc {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .f-marg {
+    margin: 0 auto 40px auto !important; } }
 @media (max-width: 500px) {
   #solution .img {
     height: 172px; }

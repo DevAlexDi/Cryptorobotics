@@ -22,9 +22,9 @@
     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
   .button-style.second-b {
     background: #0052fb;
-    transition: 0s, box-shadow 0.3s; }
+    transition: 0.3s; }
     .button-style.second-b:hover {
-      background: linear-gradient(0deg, #518aff, #0052fb);
+      background: #518aff;
       color: #fff; }
   .button-style.play-inside {
     display: flex;
@@ -496,9 +496,9 @@
           border-radius: 6px;
           margin-right: 25px;
           cursor: pointer;
-          transition: 0s; }
+          transition: 0.3s; }
           .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc:hover {
-            background: linear-gradient(0deg, #518aff, #0052fb); }
+            background: #518aff; }
       .form-and-soc .flex-form-soc .left-side .plus-wr {
         height: 100%;
         position: relative;
@@ -588,9 +588,9 @@
       .form-and-soc .flex-form-soc .right-side .button-style-2 {
         padding: 18px 0;
         background: #0052fb;
-        transition: 0s; }
+        transition: 0.3s; }
         .form-and-soc .flex-form-soc .right-side .button-style-2:hover {
-          background: linear-gradient(0deg, #518aff, #0052fb); }
+          background: #518aff; }
       .form-and-soc .flex-form-soc .right-side input::-webkit-input-placeholder {
         color: #518aff; }
       .form-and-soc .flex-form-soc .right-side input::-moz-placeholder {
@@ -960,12 +960,12 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #25a9df;
-    transition: 0s;
+    transition: 0.3s;
     border-radius: 4px; }
     .flex-icons-human a img {
       max-width: 25px; }
     .flex-icons-human a:hover {
-      background: linear-gradient(0deg, #518aff, #0052fb); }
+      background: #518aff; }
 
 #news #all_news {
   color: #fff;
@@ -1360,9 +1360,9 @@ button {
   height: 52px; }
 
 #man .man_text .soc a {
-  transition: 0s; }
+  transition: 0.3s; }
   #man .man_text .soc a:hover {
-    background: linear-gradient(0deg, #518aff, #0052fb); }
+    background: #518aff; }
 
 #contacts p {
   color: #518aff;

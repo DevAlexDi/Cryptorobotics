@@ -24,9 +24,9 @@
     }
     &.second-b{
         background: #0052fb;
-        transition: 0s, box-shadow 0.3s;
+        transition: 0.3s;
         &:hover{
-            background: linear-gradient(0deg, #518aff, #0052fb);
+            background: #518aff;
             color: #fff;
         
         }
@@ -631,9 +631,9 @@
                     margin-right: 25px;
                     cursor: pointer;
                    
-                    transition: 0s;
+                    transition: 0.3s;
                     &:hover{
-                        background: linear-gradient(0deg, #518aff, #0052fb);
+                        background: #518aff;
                     }
                 }
             }
@@ -744,9 +744,9 @@
             .button-style-2{
                 padding: 18px 0;
                 background: #0052fb;
-                transition: 0s;
+                transition: 0.3s;
                 &:hover{
-                     background: linear-gradient(0deg, #518aff, #0052fb);
+                     background: #518aff;
                 }
             }
             input::-webkit-input-placeholder{
@@ -1241,13 +1241,13 @@ button{
         justify-content: center;
         align-items: center;
         background-color: #25a9df;
-        transition: 0s;
+        transition: 0.3s;
         border-radius: 4px;
         img{
             max-width: 25px;
         }
         &:hover{
-            background: linear-gradient(0deg, #518aff, #0052fb);
+            background: #518aff;
         }
     }
 }
@@ -1740,9 +1740,9 @@ button{
     height: 52px;
 }
 #man .man_text .soc a{
-    transition: 0s;
+    transition: 0.3s;
     &:hover{
-        background: linear-gradient(0deg, #518aff, #0052fb);
+        background: #518aff;
     }
 }
 #contacts p{

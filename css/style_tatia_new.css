@@ -175,11 +175,19 @@ footer {
 .button-style {
   background: #061649; }
 
+.button-style.second-b, .form-and-soc .flex-form-soc .right-side .button-style-2,
+.button-style-3, .button-style-2 {
+  transition: 0.3s !important; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  transition: 0.3s !important; }
+
 .button-style.second-b:hover,
 .form-and-soc .flex-form-soc .right-side .button-style-2:hover,
 .button-style-3:hover,
 .button-style-2:hover {
-  background: linear-gradient(0deg, #518aff, #0052fb);
+  transition: 0.3s;
+  background: #518aff;
   box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
 
 .diagram {
@@ -314,7 +322,19 @@ footer {
     display: block; }
 
   #contacts .icon {
-    margin: 30px auto 15px auto; } }
+    margin: 30px auto 15px auto; }
+
+  #consultants .row:last-child .col-md-3 {
+    float: none; }
+
+  #solution, .sec-slider-realiz.conf-sec {
+    padding-bottom: 0; }
+
+  .people .human_wrap .desc .name {
+    text-align: left; }
+
+  .people .human_wrap .desc .function {
+    text-align: left; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
     height: 135px; } }
