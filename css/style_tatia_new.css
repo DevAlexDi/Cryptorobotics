@@ -164,6 +164,9 @@ footer {
         footer .footer_submenu li a:hover, footer .footer_submenu li span:hover {
           color: white; }
 
+.button-style {
+  background: #061649; }
+
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {
     max-width: 70%; }
