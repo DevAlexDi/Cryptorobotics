@@ -19,7 +19,7 @@
         background:#003872;
     }
     &.second-b{
-        background:#25a9df;
+        background: #0052fb;
         &:hover{
             background: #0570c3;
             color: #fff;
@@ -389,6 +389,9 @@
         }
     }
 }
+.desc-main-baner{
+    margin-bottom: 60px;
+}
 .main-baner{
     position: relative;
     padding-top: 160px;
@@ -397,14 +400,14 @@
         position: relative;
         z-index: 10;
         .iframe-wr{
-            margin-bottom: 30px;
+            margin-bottom: 60px;
             .iframe{
                 display: block;
                 border: none;
                 width: 100%;
-                height: 250px;
+                height: 367px;
                 cursor: pointer;
-             
+                background-image: url(../img/imagemovie.jpg);
                 background-position: center;
                 background-size: cover;
                 position: relative;
@@ -539,7 +542,7 @@
     background: #001a6a;
     position: relative;
     padding: 45px 50px;
-    transform: translateY(50%);
+  
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
     .flex-form-soc{
         position: relative;
@@ -793,13 +796,10 @@ button{
     h4{
         font-size: 36px;
         font-weight: normal;
-        color: #0d264e;
+        color: #fff;
         font-family: "FiraSans-Bold";
         margin-bottom: 80px;
         text-align: center;
-    }
-    .for-padd-slider{
-      
     }
     .slider-realiz-init{
         display: flex;
@@ -1124,7 +1124,7 @@ button{
 
 #solution{
     background: #061649;
-    padding-top: 200px;
+    padding-top: 120px;
 }
 .flex-icons-human{
     display: flex;
@@ -1251,6 +1251,8 @@ button{
 .box-counter-ico{
     background: #001a6a;
     padding: 25px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
     .text-start{
         text-align: center;
         margin-bottom: 30px;
@@ -1262,7 +1264,6 @@ button{
     }
     .main-counter-wr{
         display: flex;
-        margin-bottom: 30px;
         .counter-velue{
             width: 25%;
             border-right: 1px solid #0052fb;
@@ -1271,10 +1272,10 @@ button{
             align-items: center;
             span{
                 display: block;
-                font-size: 44px;
+                font-size: 40px;
                 color: #fff;
-                margin-bottom: 10px;
-                line-height: 44px;
+                margin-bottom: 13px;
+                line-height: 40px;
                 &.desc{
                     margin: 0;
                     font-size: 14px;
@@ -1293,14 +1294,14 @@ button{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 17px;
+            margin-bottom: 25px;
             span{
                 display: block;
                 font-size: 18px;
                 font-family: "FiraSans-Bold";
                 color: #fff;
                 padding-right: 9px;
-                    letter-spacing: 1px;
+                letter-spacing: 1px;
                 text-transform: uppercase;
                 &.count{
                     padding-right: 0;
@@ -1317,30 +1318,29 @@ button{
         .top-range{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             span{
                 display: block;
-                font-family: "FiraSans-Bold";
-                font-size: 14px;
+                letter-spacing: 1px;
+                font-size: 16px;
                 text-transform: uppercase;
                 color: #518aff;
             }
         }
         .some-range{
-            margin-bottom: 39px;
+            margin-bottom: 21px;
             position: relative;
-            height: 10px;
-            border-radius: 10px;
+            height: 19px;
+            border-radius: 19px;
             background: #fff;
             .done{
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 50%;
-                height: 10px;
-                background: #ff025d;
-                border-radius: 10px;
-             box-shadow: 0px 0px 20px 7px rgba(255, 2, 93, 0.75); 
+                height: 19px;
+                background: linear-gradient(90deg, #518aff, #0052fb);
+                border-radius: 19px;
+                box-shadow: -4px 0px 20px 4px rgba(0, 82, 251, 0.75);
             }
         }
     }
@@ -1424,3 +1424,129 @@ button{
         color: #518aff;
     }
 }
+.slider-realiz-init-new{
+    display: flex;
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        .one-slide{
+            &:first-child{
+                &:before{
+                    width: 50%;
+                    left: 0;
+                } 
+            }
+            &:last-child{
+                &:before{
+                    left: 50%;
+                    width: 50%;
+                }
+            }
+            &:after{
+                transform: rotate(180deg);
+                transform-origin: center;
+            }
+        }
+    }
+    &:nth-child(odd){
+        .one-slide{
+            &:last-child{
+                &:after{
+                    width: 140px;
+                    height: 257px;
+                    background-image: url(../img/right-duga.png);
+                    background-repeat: no-repeat;
+                    top: 48px;
+                    right: auto;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    .one-slide{
+        width: 25%;
+        padding: 0 20px;
+        position: relative;
+        &:first-child{
+            &:before{
+                width: 50%;
+                left: 50%;
+            } 
+        }
+        &:last-child{
+            &:before{
+                width: 50%;
+            }
+        }
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #0000ff;
+        }
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 39px;
+            z-index: 5;
+            right: -6px;
+            width: 12px;
+            height: 20px;
+            background-image: url(../img/arr-right-new.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .date{
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #518aff;
+            text-align: center;
+            margin-bottom: 16px;
+            
+        }
+        .circle-new{
+            z-index: 15;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(81,138,255,0.5), rgba(0,82,251,0.5));
+            box-shadow: 0px 0px 20px 4px rgba(0, 82, 251, 0.75);
+            width: 27px;
+            height: 27px;
+            margin: 0 auto 34px auto;
+            border-radius: 50%;
+            &:before{
+                content: "";
+                display: block;
+                background: linear-gradient(180deg, #518aff, #0052fb);
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                
+            }
+        }
+        .desc{
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            min-height: 159px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+//slider-realiz-init
+    
+    
     $('.plus').click(function(){
         if($(this).parents('.flex-form-soc').hasClass('opened')){
             $(this).parents('.flex-form-soc').removeClass('opened');
