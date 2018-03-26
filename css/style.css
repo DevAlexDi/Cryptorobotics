@@ -1368,4 +1368,10 @@ button {
   background-repeat: no-repeat;
   background-position: center; }
 
+.form-and-soc .flex-form-soc .right-side {
+  height: 80px; }
+
+.form-and-soc {
+  padding: 30px 40px 30px 50px; }
+
 /*# sourceMappingURL=style.css.map */
