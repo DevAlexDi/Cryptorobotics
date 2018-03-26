@@ -112,6 +112,34 @@
   }
 }
 
+#rates {
+  padding-bottom: 25px;
+
+  h2 {
+    color: white;
+  }
+
+  .rate {
+    padding: 0 0 45px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .num {
+    padding: 50px 45px 45px;
+    background: #001a6a;
+    color: white!important;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+#faqs {
+  h2 {
+    color: white;
+  }
+}
 
 
 @media (max-width: 1199px) {
@@ -174,6 +202,13 @@
   #news .news_wrap .news_item {
     width: 100%;
     margin: 0 0 30px!important;
+  }
+
+  #rates .rate {
+    padding-bottom: 15px;
+  }
+  #rates .rate .num {
+    padding-top: 17px;
   }
 }
 

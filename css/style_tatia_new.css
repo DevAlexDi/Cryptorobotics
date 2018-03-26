@@ -81,6 +81,23 @@
     background: #061649;
     color: white; }
 
+#rates {
+  padding-bottom: 25px; }
+  #rates h2 {
+    color: white; }
+  #rates .rate {
+    padding: 0 0 45px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15); }
+  #rates .num {
+    padding: 50px 45px 45px;
+    background: #001a6a;
+    color: white !important; }
+    #rates .num:after {
+      display: none; }
+
+#faqs h2 {
+  color: white; }
+
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {
     max-width: 70%; }
@@ -129,7 +146,13 @@
 
   #news .news_wrap .news_item {
     width: 100%;
-    margin: 0 0 30px !important; } }
+    margin: 0 0 30px !important; }
+
+  #rates .rate {
+    padding-bottom: 15px; }
+
+  #rates .rate .num {
+    padding-top: 17px; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
     height: 135px; } }
