@@ -118,6 +118,16 @@
 
 #contacts {
   background: #061649; }
+  #contacts .icon {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 30px 0 0; }
+  #contacts .col-sm-6.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.second-form {
+  margin-top: 80px; }
 
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {
@@ -130,7 +140,13 @@
     padding-top: 101%; }
 
   #news .news_wrap .news_item .title {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  #contacts .icon {
+    margin-right: 15px; }
+
+  #contacts .addr, #contacts a {
+    font-size: 16px; } }
 @media (max-width: 767px) {
   #solution .new-solution .flex-boxes-solution .one-box {
     width: 50%; }
@@ -173,7 +189,10 @@
     padding-bottom: 15px; }
 
   #rates .rate .num {
-    padding-top: 17px; } }
+    padding-top: 17px; }
+
+  #contacts .icon {
+    margin: 30px 15px 15px; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
     height: 135px; } }
