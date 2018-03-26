@@ -126,6 +126,21 @@
             .flex-menu .side.right-side .flex-lang .lang-wrapp .lang-list{
                 transform: translate(-50%, 27px);
             }
+            .flex-menu{
+                .side{
+                   &.mid-side{
+                        .menu-list{
+                            .first-itm{
+                                a,span{
+                                    padding: 27px 11px;
+                                }
+                            }
+                       }
+                    } 
+                } 
+            }
+            
+            
             /*
             .flex-menu{
                 .side{
