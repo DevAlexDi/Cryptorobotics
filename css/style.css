@@ -1,3 +1,6 @@
+.all-content {
+  overflow: hidden; }
+
 .button-style {
   display: block;
   cursor: pointer;
@@ -41,6 +44,17 @@
         border-style: solid;
         border-width: 5px 0 5px 8px;
         border-color: transparent transparent transparent #ffffff; }
+
+.container {
+  position: relative; }
+
+.abs-grad-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(closest-side, #001a6a, #061649); }
 
 .button-style-2 {
   display: block;
@@ -899,7 +913,6 @@ button {
 #solution .img {
   height: 400px;
   position: relative;
-  background-image: url(../img/gif.gif);
   background-size: 125%;
   background-position: center; }
 

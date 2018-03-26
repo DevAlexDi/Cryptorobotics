@@ -63,7 +63,7 @@
     .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
     margin-right: 26px;
 }
-    
+
 }
 
 @media (max-width: 991px) {
@@ -338,7 +338,12 @@
     .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
     margin-right: 47px;
 }
-    
+    .form-and-soc .flex-form-soc .right-side{
+        overflow: visible;
+    }
+    .form-and-soc .flex-form-soc .right-side .abs{
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -840,6 +845,9 @@
 }
     .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc:nth-child(7){
         margin-right: 40px;
+    }
+    .for-padd-slider .one-slide .desc{
+        font-size: 14px;
     }
 }
 
