@@ -12,8 +12,67 @@
 .people .human_wrap .desc .text p {
   margin-bottom: 10px; }
 
+#work_with {
+  background: #061649; }
+  #work_with h2 {
+    text-align: center;
+    color: white;
+    font: 36px FiraSans-Bold;
+    margin-bottom: 50px; }
+  #work_with .work_with_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    #work_with .work_with_wrap .work_logo {
+      margin-bottom: 30px;
+      margin-top: 50px;
+      width: 25%;
+      text-align: center; }
+      #work_with .work_with_wrap .work_logo img {
+        max-width: 100%; }
+
+@media (max-width: 1199px) {
+  #work_with .work_with_wrap .work_logo img {
+    max-width: 70%; }
+
+  .people .human_wrap:before {
+    padding-top: 118%; } }
+@media (max-width: 991px) {
+  .people .human_wrap:before {
+    padding-top: 101%; } }
 @media (max-width: 767px) {
   #solution .new-solution .flex-boxes-solution .one-box {
-    width: 50%; } }
+    width: 50%; }
+
+  .people .human_wrap:before {
+    padding-top: 0; }
+
+  .people .human_wrap .desc .name {
+    color: white;
+    text-align: center; }
+
+  .people .human_wrap .desc .text {
+    color: white; }
+
+  .people .human_wrap .img {
+    height: 345px; }
+
+  .people .human_wrap {
+    box-shadow: none; }
+
+  #consultants .row:last-child {
+    display: flex;
+    flex-wrap: wrap; }
+
+  #work_with .work_with_wrap .work_logo {
+    width: 50%;
+    margin-top: 15px; }
+
+  #work_with h2 {
+    margin-bottom: 30px; } }
+@media (max-width: 500px) {
+  .people .human_wrap .img {
+    height: 135px; } }
 
 /*# sourceMappingURL=style_tatia_new.css.map */
