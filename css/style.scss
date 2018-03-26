@@ -7,16 +7,17 @@
     letter-spacing: 2px;
     padding: 16px 0;
     text-transform: uppercase;
-    font-size: 13px;
-    font-family: "FiraSans-Bold";
+    font-size: 12px;
     background: #001a6a;
     border-radius: 6px;
+    font-weight: bold;
     transition: 0.3s;
     color: #fff;
     border: 1px solid #0239a9;
     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.25); 
     &:hover{
-        background:#003872;
+
+        box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
     }
     &.second-b{
         background: #0052fb;
@@ -119,12 +120,13 @@
         transition: 0.3s;
         &.scrolled{
             position: fixed;
-            background: #fff;
+            background: #001a6a;
             border: none;
             box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10);
             .flex-menu .side.right-side .flex-lang .lang-wrapp .lang-list{
-                    transform: translate(-50%, 27px);
+                transform: translate(-50%, 27px);
             }
+            /*
             .flex-menu{
                 .side{
                     &.left-side{
@@ -179,7 +181,7 @@
                         }
                     }
                 }
-            }
+            }*/
         }
         &.every-time-scrolled{
             display: none!important;
@@ -262,7 +264,7 @@
                                 }
                             }
                             .lang{
-                                color: #25a9df;
+                                color: #518aff;
                                 text-transform: uppercase;
                                 font-size: 16px;
                                 transition: 0.3s;
@@ -310,11 +312,9 @@
                                         background: #f2f5fa;
                                     }
                                     &.active{
-                                        background: #25a9df;
+                                        background: #0052fb;
                                         color: #fff;
-                                        &:hover{
-                                            background: #25a9df;
-                                        }
+                                        
                                     }
                                 }
                             }
@@ -322,18 +322,20 @@
                         .login{
                             display: block;
                             cursor: pointer;
-                                padding: 13px 20px;
+                            padding: 12px 20px;
                             text-transform: uppercase;
-                            font-size: 13px;
-                            font-family: "FiraSans-Bold";
-                         
+                            font-size: 12px;
+                            font-weight: bold;
+                            margin-left: 29px;
                             border-radius: 6px;
-                            background: #004996;
+                            background: #061649;
                             transition: 0.3s;
                             color: #fff;
                             letter-spacing: 1px;
+                            border: 1px solid #0239a9;
+                            box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.25); 
                             &:hover{
-                                background:#003872;
+                                box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
                             }
                             
                         }
@@ -365,7 +367,7 @@
                                     background: linear-gradient(90deg, #518aff, #0052fb);
                                     transition: 0.3s;
                                     opacity: 0;
-                                    box-shadow: 8px 13px 0px 0px rgba(0, 82, 251, 0.5); 
+                                    box-shadow: 0px 0px 20px 0px rgba(0, 82, 251, 0.5); 
                                 }
                             }
                             &:hover{
@@ -1169,14 +1171,7 @@ button{
         color: #0d264e;
     }
 }
-.sec-lvl-1 .header-nav.scrolled .flex-menu .side.right-side .flex-lang .login{
-    background-color: #dddddd;
-    color: #0d264e;
-    &:hover{
-        background-color: #c0c0c0;
-        color: #0d264e;
-    }
-}
+
 .form-and-soc .flex-form-soc .right-side input{
     border-radius: 0;
 }
@@ -1440,10 +1435,24 @@ button{
                     left: 50%;
                     width: 50%;
                 }
+                &:after{
+                    width: 140px;
+                    height: 257px;
+                    background-image: url(../img/left-duga.png);
+                    background-repeat: no-repeat;
+                    top: 48px;
+                    left: auto;
+                    right: 50%;
+                    transform: rotate(0);
+                    
+                    
+                }
             }
             &:after{
                 transform: rotate(180deg);
                 transform-origin: center;
+                right: auto;
+                left: -6px;
             }
         }
     }
@@ -1458,6 +1467,15 @@ button{
                     top: 48px;
                     right: auto;
                     left: 50%;
+                }
+            }
+        }
+    }
+    &:last-child{
+        .one-slide{
+            &:last-child{
+                &:after{
+                   display: none; 
                 }
             }
         }
@@ -1505,6 +1523,8 @@ button{
             text-transform: uppercase;
             color: #518aff;
             text-align: center;
+            position: relative;
+            z-index: 20;
             margin-bottom: 16px;
             
         }
@@ -1535,12 +1555,49 @@ button{
             font-size: 16px;
             color: #fff;
             min-height: 159px;
+            position: relative;
+            z-index: 20;
         }
     }
 }
 
 
-
+.img-white-paper-icon{
+    padding-left: 37px!important;
+    display: block;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 11px;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/list.png);
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%!important;
+        left: 11px!important;
+        transform: translateY(-50%);
+        width: 16px!important;
+        height: 16px!important;
+        background: url(../img/list-white.png)!important;
+        opacity: 0;
+        transition: 0.3s;
+       box-shadow: none!important;
+        
+    }
+    &:hover{
+        &:after{
+            opacity: 1!important;
+        }
+    }
+}
 
 
 
