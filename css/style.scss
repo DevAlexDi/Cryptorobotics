@@ -980,6 +980,57 @@ button{
     }
 }
 
+.for-padd-slider{
+    .slick-arrow{
+        display: block;
+        position: absolute;
+        top: 69px;
+        transform: translateY(-50%);
+        font-weight: normal;
+        border: none;
+        background-color: transparent;
+        border: 2px solid #25a9df;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover{
+           box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
+        }
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 18px;
+            height: 10px;
+            opacity: 0;
+        }
+        &.slick-prev{
+            right: calc(100% + 5px);
+            background-image: url(../img/arr-left-w.png);
+            &:before{
+                
+            }
+        }
+        &.slick-next{
+            left: calc(100% + 5px);
+             background-image: url(../img/arr-right-w.png);
+            &:before{
+               
+            }
+        }
+    }
+}
+
+
 .main-baner .flex-counter .main-counter-wr .counter-velue .d, .main-baner .flex-counter .main-counter-wr .counter-velue .h, .main-baner .flex-counter .main-counter-wr .counter-velue .m, .main-baner .flex-counter .main-counter-wr .counter-velue .s{
     width: 47px;
     display: block;
@@ -1434,66 +1485,69 @@ button{
         color: #518aff;
     }
 }
-.slider-realiz-init-new{
-    display: flex;
-    &:nth-child(even){
-        flex-direction: row-reverse;
-        .one-slide{
-            &:first-child{
-                &:before{
-                    width: 50%;
-                    left: 0;
-                } 
-            }
-            &:last-child{
-                &:before{
-                    left: 50%;
-                    width: 50%;
+.for-padd-slider{
+    .slider-realiz-init-new{
+        display: flex;
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            .one-slide{
+                &:first-child{
+                    &:before{
+                        width: 50%;
+                        left: 0;
+                    } 
+                }
+                &:last-child{
+                    &:before{
+                        left: 50%;
+                        width: 50%;
+                    }
+                    &:after{
+                        width: 140px;
+                        height: 257px;
+                        background-image: url(../img/left-duga.png);
+                        background-repeat: no-repeat;
+                        top: 48px;
+                        left: auto;
+                        right: 50%;
+                        transform: rotate(0);
+
+
+                    }
                 }
                 &:after{
-                    width: 140px;
-                    height: 257px;
-                    background-image: url(../img/left-duga.png);
-                    background-repeat: no-repeat;
-                    top: 48px;
-                    left: auto;
-                    right: 50%;
-                    transform: rotate(0);
-                    
-                    
-                }
-            }
-            &:after{
-                transform: rotate(180deg);
-                transform-origin: center;
-                right: auto;
-                left: -6px;
-            }
-        }
-    }
-    &:nth-child(odd){
-        .one-slide{
-            &:last-child{
-                &:after{
-                    width: 140px;
-                    height: 257px;
-                    background-image: url(../img/right-duga.png);
-                    background-repeat: no-repeat;
-                    top: 48px;
+                    transform: rotate(180deg);
+                    transform-origin: center;
                     right: auto;
-                    left: 50%;
+                    left: -6px;
                 }
             }
         }
-    }
-    &:last-child{
-        .one-slide{
-            &:last-child{
-                &:after{
-                   display: none; 
+        &:nth-child(odd){
+            .one-slide{
+                &:last-child{
+                    &:after{
+                        width: 140px;
+                        height: 257px;
+                        background-image: url(../img/right-duga.png);
+                        background-repeat: no-repeat;
+                        top: 48px;
+                        right: auto;
+                        left: 50%;
+                    }
                 }
             }
         }
+        &:last-child{
+            .one-slide{
+                &:last-child{
+                    &:after{
+                       display: none; 
+                    }
+                }
+            }
+        }
+        
     }
     .one-slide{
         width: 25%;
@@ -1541,7 +1595,7 @@ button{
             position: relative;
             z-index: 20;
             margin-bottom: 16px;
-            
+
         }
         .circle-new{
             z-index: 15;
@@ -1562,7 +1616,7 @@ button{
                 width: 15px;
                 height: 15px;
                 border-radius: 50%;
-                
+
             }
         }
         .desc{
@@ -1575,7 +1629,6 @@ button{
         }
     }
 }
-
 
 .img-white-paper-icon{
     padding-left: 37px!important;
