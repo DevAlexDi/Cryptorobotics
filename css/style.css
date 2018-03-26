@@ -595,7 +595,9 @@
           -webkit-transition: 0.3s;
           transition: 0.3s; }
           .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc:hover {
-            background: #518aff; }
+            background: #518aff;
+            -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+                    box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
       .form-and-soc .flex-form-soc .left-side .plus-wr {
         height: 100%;
         position: relative;
@@ -1559,9 +1561,12 @@ button {
 .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
   width: 52px;
   height: 52px; }
+  .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc:hover {
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+            box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
 
 .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
-  margin-right: 28px; }
+  margin-right: 25px; }
 
 .form-and-soc .flex-form-soc .left-side {
   height: 80px;
@@ -1571,10 +1576,10 @@ button {
   padding: 30px 50px; }
 
 .form-and-soc .flex-form-soc .left-side .plus-wr {
-  left: -17px; }
+  left: -16px; }
 
 .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
-  margin-right: 46px; }
+  margin-right: 45px; }
 
 .form-and-soc .flex-form-soc .right-side .button-style-2 {
   margin-right: 9px; }
@@ -1636,5 +1641,8 @@ button {
 
 #solution .new-solution .flex-boxes-solution .one-box img {
   margin-bottom: 15px; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials {
+  left: 13px; }
 
 /*# sourceMappingURL=style.css.map */

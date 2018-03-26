@@ -58,16 +58,18 @@
     padding-right: 7px;
 }
     .form-and-soc .flex-form-soc .left-side .plus-wr {
-    left: -17px;
+    left: -13px;
 }
     .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
-    margin-right: 26px;
+    margin-right: 25.5px;
 }
 
 }
 
 @media (max-width: 991px) {
-
+    .form-and-soc .flex-form-soc .left-side .abs-socials{
+        left: 0;
+    }
     .main-baner .desc-main-baner ul {
         margin-bottom: 30px;
     }
