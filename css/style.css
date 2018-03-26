@@ -18,9 +18,10 @@
   .button-style:hover {
     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
   .button-style.second-b {
-    background: #0052fb; }
+    background: #0052fb;
+    transition: 0s; }
     .button-style.second-b:hover {
-      background: #0570c3;
+      background: linear-gradient(180deg, #518aff, #0052fb);
       color: #fff; }
   .button-style.play-inside {
     display: flex;
@@ -50,9 +51,9 @@
   letter-spacing: 2px;
   padding: 16px 0;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   background: #0052fb;
-  font-family: "FiraSans-Bold";
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   transition: 0.3s;
@@ -500,10 +501,12 @@
           transition: 0.3s;
           cursor: pointer;
           background-color: #001a6a; }
-          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:before {
-            background: #fff; }
-          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:after {
-            background: #fff; }
+          .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover {
+            box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
+            .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:before {
+              background: #fff; }
+            .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:after {
+              background: #fff; }
           .form-and-soc .flex-form-soc .left-side .plus-wr .plus:before {
             content: "";
             display: block;
@@ -554,13 +557,20 @@
         border: none;
         outline: none;
         background: transparent;
-        padding: 14px 0;
-        transition: 0.3s;
+        padding: 13px 0;
         font-size: 18px;
         border-bottom: 2px solid #518aff;
-        color: #518aff; }
+        color: #fff; }
         .form-and-soc .flex-form-soc .right-side input:focus {
-          border-color: #518aff; }
+          border-color: #fff; }
+          .form-and-soc .flex-form-soc .right-side input:focus::-webkit-input-placeholder {
+            color: #fff; }
+          .form-and-soc .flex-form-soc .right-side input:focus::-moz-placeholder {
+            color: #fff; }
+          .form-and-soc .flex-form-soc .right-side input:focus:-moz-placeholder {
+            color: #fff; }
+          .form-and-soc .flex-form-soc .right-side input:focus:-ms-input-placeholder {
+            color: #fff; }
       .form-and-soc .flex-form-soc .right-side .button-style-2 {
         padding: 18px 0;
         background: #0052fb; }
@@ -1293,5 +1303,18 @@ button {
     box-shadow: none !important; }
   .img-white-paper-icon:hover:after {
     opacity: 1 !important; }
+
+.form-and-soc .flex-form-soc .right-side .button-style-2 {
+  padding: 17px 0; }
+
+.form-and-soc .flex-form-soc .right-side input {
+  font-size: 16px; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  width: 52px;
+  height: 52px; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  margin-right: 28px; }
 
 /*# sourceMappingURL=style.css.map */

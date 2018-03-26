@@ -21,10 +21,11 @@
     }
     &.second-b{
         background: #0052fb;
+        transition: 0s;
         &:hover{
-            background: #0570c3;
+            background: linear-gradient(180deg, #518aff, #0052fb);
             color: #fff;
-          
+        
         }
     }
     &.play-inside{
@@ -59,9 +60,9 @@
     letter-spacing: 2px;
     padding: 16px 0;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     background:#0052fb;
-    font-family: "FiraSans-Bold";
+    font-weight: bold;
 
     border: none;
     border-radius: 6px;
@@ -640,7 +641,7 @@
                     cursor: pointer;
                     background-color: #001a6a;
                     &:hover{
-                      
+                       box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
                         &:before{
                             background: #fff;
                         }
@@ -705,13 +706,25 @@
                 border: none;
                 outline: none;
                 background: transparent;
-                padding:14px 0;
-                transition: 0.3s;
+                padding:13px 0;
+                
                 font-size: 18px;
                 border-bottom: 2px solid #518aff;
-                color: #518aff;
+                color: #fff;
                 &:focus{
-                    border-color: #518aff;
+                    border-color: #fff;
+                    &::-webkit-input-placeholder{
+                        color: #fff;
+                    }
+                    &::-moz-placeholder{
+                        color: #fff;
+                    }
+                    &:-moz-placeholder{
+                        color: #fff;
+                    }
+                    &:-ms-input-placeholder{
+                        color: #fff;
+                    }
                 }
             }
             .button-style-2{
@@ -1668,10 +1681,19 @@ button{
 }
 
 
+.form-and-soc .flex-form-soc .right-side .button-style-2{
+    padding: 17px 0;
+}
+.form-and-soc .flex-form-soc .right-side input{
+    font-size: 16px;
+}
 
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc{
+    width: 52px;
+    height: 52px;
+}
 
-
-
-
-
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc{
+    margin-right: 28px;
+}
 
