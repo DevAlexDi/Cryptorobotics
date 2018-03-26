@@ -19,7 +19,8 @@ body {
   margin-bottom: 10px; }
 
 #work_with {
-  background: #061649; }
+  background: #061649;
+  padding-top: 55px; }
   #work_with h2 {
     text-align: center;
     color: white;
@@ -42,7 +43,8 @@ body {
   padding-bottom: 30px; }
 
 #news h2 {
-  color: white; }
+  color: white;
+  margin-bottom: 95px; }
 
 #news .news_wrap {
   display: flex;
@@ -85,7 +87,8 @@ body {
     color: white; }
 
 #rates {
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  padding-top: 0; }
   #rates h2 {
     color: white; }
   #rates .rate {
@@ -99,7 +102,8 @@ body {
       display: none; }
 
 #faqs h2 {
-  color: white; }
+  color: white;
+  margin-bottom: 100px; }
 #faqs .faq {
   background: #001a6a;
   box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
@@ -120,7 +124,8 @@ body {
     color: white; }
 
 #contacts {
-  background: #061649; }
+  background: #061649;
+  padding-top: 25px; }
   #contacts .icon {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
     margin: 0 30px 0 0; }
@@ -166,6 +171,23 @@ footer {
 
 .button-style {
   background: #061649; }
+
+.button-style.second-b:hover,
+.form-and-soc .flex-form-soc .right-side .button-style-2:hover,
+.button-style-3:hover,
+.button-style-2:hover {
+  background: linear-gradient(0deg, #518aff, #0052fb);
+  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
+
+.diagram {
+  padding-bottom: 55px; }
+
+.sec-slider-realiz {
+  padding-bottom: 0; }
+
+.people {
+  padding-top: 10px;
+  padding-bottom: 30px; }
 
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {
@@ -251,7 +273,29 @@ footer {
   footer .menu li .img-white-paper-icon:before,
   footer .menu li .img-white-paper-icon:after {
     left: 50% !important;
-    margin-left: -55px; } }
+    margin-left: -55px; }
+
+  #solution,
+  .sec-slider-realiz.conf-sec {
+    padding-top: 35px; }
+
+  #solution .new-solution .tt-1.small-m-w,
+  #solution .new-solution .new-png-logo,
+  #solution .new-solution .tt-1,
+  .diagram .dia-head .text-we-can,
+  #news h2,
+  #faqs h2 {
+    margin-bottom: 35px; }
+
+  #rates {
+    padding-top: 55px; }
+
+  .diagram,
+  .sec-slider-realiz,
+  #man,
+  #work_with,
+  #faqs {
+    padding-top: 0; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
     height: 135px; } }
