@@ -22,6 +22,7 @@ body {
 
 #work_with {
   background: #061649;
+  padding-top: 55px;
 
   h2 {
     text-align: center;
@@ -55,6 +56,7 @@ body {
 
 #news h2 {
   color: white;
+  margin-bottom: 95px;
 }
 
 #news .news_wrap {
@@ -118,6 +120,7 @@ body {
 
 #rates {
   padding-bottom: 25px;
+  padding-top: 0;
 
   h2 {
     color: white;
@@ -142,6 +145,7 @@ body {
 #faqs {
   h2 {
     color: white;
+    margin-bottom: 100px;
   }
 
   .faq {
@@ -173,6 +177,7 @@ body {
 
 #contacts {
   background: #061649;
+  padding-top: 25px;
 
   .icon {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
@@ -239,6 +244,28 @@ footer {
       }
     }
   }
+}
+
+.button-style {
+  background: #061649;
+}
+.button-style.second-b:hover,
+.form-and-soc .flex-form-soc .right-side .button-style-2:hover,
+.button-style-3:hover,
+.button-style-2:hover {
+  background: linear-gradient(0deg, #518aff, #0052fb);
+  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+}
+
+.diagram {
+  padding-bottom: 55px;
+}
+.sec-slider-realiz {
+  padding-bottom: 0;
+}
+.people {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 
@@ -344,6 +371,29 @@ footer {
   footer .menu li .img-white-paper-icon:after {
     left: 50%!important;
     margin-left: -55px;
+  }
+
+  #solution,
+  .sec-slider-realiz.conf-sec {
+    padding-top: 35px;
+  }
+  #solution .new-solution .tt-1.small-m-w,
+  #solution .new-solution .new-png-logo,
+  #solution .new-solution .tt-1,
+  .diagram .dia-head .text-we-can,
+  #news h2,
+  #faqs h2 {
+    margin-bottom: 35px;
+  }
+  #rates {
+    padding-top: 55px;
+  }
+  .diagram,
+  .sec-slider-realiz,
+  #man,
+  #work_with,
+  #faqs {
+    padding-top: 0;
   }
 }
 
