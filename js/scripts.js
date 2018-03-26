@@ -83,7 +83,7 @@ $(document).ready(function () {
         
             $('.for-padd-slider').slick('unslick');
             slider_resize_flag = true;
-            
+            console.log('ok');
             
             for(var i = 1;i<= Math.ceil(length_slides);i++){
                 $('.padd-slider-1 .one-slide-line-'+i).wrapAll("<div class='slider-realiz-init-new' />");

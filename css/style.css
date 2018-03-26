@@ -56,7 +56,7 @@
   font-weight: bold;
   border: none;
   border-radius: 6px;
-  transition: 0.3s;
+  transition: 0s;
   color: #fff; }
   .button-style-2:hover {
     background: #0570c3;
@@ -74,10 +74,10 @@
   text-transform: uppercase;
   font-size: 14px;
   background: transparent;
-  font-family: "FiraSans-Bold";
+  font-weight: bold;
   background: #0052fb;
   border-radius: 6px;
-  transition: 0.3s;
+  transition: 0s;
   margin: 0 auto;
   color: #fff; }
   .button-style-3:hover {
@@ -947,12 +947,12 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #25a9df;
-    transition: 0.3s;
+    transition: 0s;
     border-radius: 4px; }
     .flex-icons-human a img {
       max-width: 25px; }
     .flex-icons-human a:hover {
-      background: #0570c3; }
+      background: linear-gradient(0deg, #518aff, #0052fb); }
 
 #news #all_news {
   color: #fff;
@@ -1212,6 +1212,8 @@ button {
     left: 50%; }
   .for-padd-slider .slider-realiz-init-new:last-child .one-slide:last-child:after {
     display: none; }
+  .for-padd-slider .slider-realiz-init-new:last-child .one-slide .desc {
+    min-height: auto; }
 .for-padd-slider .one-slide {
   width: 25%;
   padding: 0 20px;
@@ -1342,5 +1344,28 @@ button {
 .form-and-soc .flex-form-soc .left-side .plus-wr .plus {
   width: 52px;
   height: 52px; }
+
+#man .man_text .soc a {
+  transition: 0s; }
+  #man .man_text .soc a:hover {
+    background: linear-gradient(0deg, #518aff, #0052fb); }
+
+#contacts p {
+  color: #518aff;
+  font-size: 20px; }
+
+#contacts .addr, #contacts a {
+  color: #fff; }
+
+#contacts .icon {
+  background: #001a6a; }
+
+#contacts .icon.cont_addr span {
+  background-position: center; }
+
+#contacts .icon.cont_mail span {
+  background-image: url(../img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -66,7 +66,7 @@
 
     border: none;
     border-radius: 6px;
-    transition: 0.3s;
+    transition: 0s;
     color: #fff;
     &:hover{
         background: #0570c3;
@@ -86,10 +86,10 @@
     text-transform: uppercase;
     font-size: 14px;
     background: transparent;
-    font-family: "FiraSans-Bold";
+    font-weight: bold;
     background: #0052fb;
     border-radius: 6px;
-    transition: 0.3s;
+    transition: 0s;
     margin: 0 auto;
     color: #fff;
     &:hover{
@@ -1227,13 +1227,13 @@ button{
         justify-content: center;
         align-items: center;
         background-color: #25a9df;
-        transition: 0.3s;
+        transition: 0s;
         border-radius: 4px;
         img{
             max-width: 25px;
         }
         &:hover{
-            background: #0570c3;
+            background: linear-gradient(0deg, #518aff, #0052fb);
         }
     }
 }
@@ -1528,8 +1528,6 @@ button{
                         left: auto;
                         right: 50%;
                         transform: rotate(0);
-
-
                     }
                 }
                 &:after{
@@ -1561,6 +1559,9 @@ button{
                     &:after{
                        display: none; 
                     }
+                }
+                .desc{
+                    min-height: auto;
                 }
             }
         }
@@ -1722,4 +1723,28 @@ button{
 .form-and-soc .flex-form-soc .left-side .plus-wr .plus{
     width: 52px;
     height: 52px;
+}
+#man .man_text .soc a{
+    transition: 0s;
+    &:hover{
+        background: linear-gradient(0deg, #518aff, #0052fb);
+    }
+}
+#contacts p{
+    color: #518aff;
+    font-size: 20px;
+}
+#contacts .addr, #contacts a{
+    color: #fff;
+}
+#contacts .icon{
+    background: #001a6a;
+}
+#contacts .icon.cont_addr span{
+    background-position: center;
+}
+#contacts .icon.cont_mail span{
+    background-image: url(../img/mail-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }

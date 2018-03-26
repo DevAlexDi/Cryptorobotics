@@ -19,7 +19,9 @@ body {
 .people .human_wrap .desc .text p {
   margin-bottom: 10px;
 }
-
+#faqs{
+    padding-top: 35px;
+}
 #work_with {
   background: #061649;
   padding-top: 55px;
@@ -264,10 +266,12 @@ footer {
   padding-bottom: 0;
 }
 .people {
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
-
+.sec-slider-realiz{
+    margin-bottom: 100px;
+}
 
 @media (max-width: 1199px) {
   #work_with .work_with_wrap .work_logo img {
@@ -395,6 +399,12 @@ footer {
   #faqs {
     padding-top: 0;
   }
+    #contacts .col-sm-6.text-center{
+        display: block;
+    }
+    #contacts .icon {
+        margin: 30px auto 15px auto;
+    }
 }
 
 @media (max-width: 500px) {
