@@ -50,7 +50,16 @@
     margin-right: 25.5px; }
 
   .form-and-soc .flex-form-soc .right-side .abs {
-    padding-left: 41px; } }
+    padding-left: 41px; }
+
+  .form-and-soc .flex-form-soc .right-side .abs {
+    padding-right: 7px; }
+
+  .form-and-soc .flex-form-soc .left-side .plus-wr {
+    left: -17px; }
+
+  .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
+    margin-right: 26px; } }
 @media (max-width: 991px) {
   .main-baner .desc-main-baner ul {
     margin-bottom: 30px; }

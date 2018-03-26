@@ -19,7 +19,7 @@
     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
   .button-style.second-b {
     background: #0052fb;
-    transition: 0s; }
+    transition: 0s, box-shadow 0.3s; }
     .button-style.second-b:hover {
       background: linear-gradient(0deg, #518aff, #0052fb);
       color: #fff; }
@@ -56,7 +56,7 @@
   font-weight: bold;
   border: none;
   border-radius: 6px;
-  transition: 0s;
+  transition: 0s, box-shadow 0.3s;
   color: #fff; }
   .button-style-2:hover {
     background: #0570c3;
@@ -77,7 +77,7 @@
   font-weight: bold;
   background: #0052fb;
   border-radius: 6px;
-  transition: 0s;
+  transition: 0s,box-shadow 0.3s;
   margin: 0 auto;
   color: #fff; }
   .button-style-3:hover {
@@ -1310,7 +1310,8 @@ button {
     opacity: 1 !important; }
 
 .form-and-soc .flex-form-soc .right-side .button-style-2 {
-  padding: 17px 0; }
+  padding: 17px 0;
+  transition: 0s, box-shadow 0.3s; }
 
 .form-and-soc .flex-form-soc .right-side input {
   font-size: 16px; }
@@ -1333,7 +1334,7 @@ button {
   left: -17px; }
 
 .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
-  margin-right: 45px; }
+  margin-right: 46px; }
 
 .form-and-soc .flex-form-soc .right-side .button-style-2 {
   margin-right: 9px; }
@@ -1373,5 +1374,17 @@ button {
 
 .form-and-soc {
   padding: 30px 40px 30px 50px; }
+
+.form-and-soc .flex-form-soc .right-side {
+  width: 64.5%; }
+
+.form-and-soc .flex-form-soc .right-side .abs {
+  padding-right: 4px; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  transition: margin 0.3s; }
+
+#contacts .addr, #contacts a {
+  transition: 0s, box-shadow 0.3s,margin 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
