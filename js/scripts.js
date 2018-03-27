@@ -6,7 +6,7 @@ $(document).ready(function () {
         if (inp.val() != '') {
             $.post({
                 url: 'mail.php',
-                data: {'email': email},
+                data: {'email': inp.val()},
                 success: function() {
                     inp.val('');
                 }
