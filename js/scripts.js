@@ -1,4 +1,18 @@
 $(document).ready(function () {
+
+    $('form button[type=submit]').click(function(e) {
+        e.preventDefault();
+        var inp = $(this).parents('form').find('input');
+        if (inp.val() != '') {
+            $.post({
+                url: 'mail.php',
+                data: {'email': email},
+                success: function() {
+                    inp.val('');
+                }
+            });
+        }
+    });
     
     
     $('.plus').click(function(){
