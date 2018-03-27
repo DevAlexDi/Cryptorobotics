@@ -231,7 +231,7 @@ $(document).ready(function () {
     var scrFunc = function () {
         var t = win.scrollTop(),
             e = win.height();
-        $("[data-anim], .canvas-pos").each(function (n, i) {
+        $("[data-anim], .canvas-pos,#solution h2,#solution .new-solution .tt-1,#solution .new-solution .new-png-logo,#solution .new-solution .flex-boxes-solution,.diagram .list-pr,.for-padd-slider,.for-anim-class-human,#man .man_text,#work_with .work_with_wrap").each(function (n, i) {
             var r = $(i).offset().top,
                 s = t + .9 * e;
             s > r ? $(i).attr("data-anim", "true") : true;
