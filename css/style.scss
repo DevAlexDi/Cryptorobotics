@@ -59,12 +59,164 @@
 }
 .abs-grad-1{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -302px;
+    right: -230px;
     width: 1000px;
     height: 1000px;
     background: radial-gradient(closest-side, #001a6a, #061649);
 }
+.abs-grad-2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(closest-side, #001a6a, #061649);
+}
+
+.abs-grad-3{
+    position: absolute;
+    top: 102px;
+    left: 33px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(closest-side, #001a6a, #061649);
+}
+
+
+.abs-grad-4{
+    position: absolute;
+    top: -202px;
+    left: -133px;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(closest-side, #001a6a, #061649);
+}
+
+
+.abs-grad-5{
+    position: absolute;
+    top: -138px;
+    right: -48px;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(closest-side, #001a6a, #061649);
+}
+
+
+
+
+
+
+
+
+
+.lines-1{
+    width: 1600px;
+    height: 1600px;
+    position: absolute;
+ 
+    top: -585px;
+    right: -520px;
+    border-radius: 50%;
+    border: 1px solid #001a6a;
+    display: flex;
+    padding: 290px;
+    .line{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #001a6a;
+    }
+}
+.lines-2{
+    width: 1050px;
+    height: 1050px;
+    position: absolute;
+ 
+    top: -185px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 1px solid #001a6a;
+
+
+}
+
+.lines-3{
+    width: 1650px;
+    height: 1650px;
+    position: absolute;
+     top: -381px;
+    left: -441px;
+       
+    border-radius: 50%;
+    border: 1px solid #001a6a;
+    display: flex;
+    padding: 330px;
+    .line{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #001a6a;
+    }
+}
+.lines-4{
+    width: 1080px;
+    height: 1080px;
+    position: absolute;
+    top: -310px;
+    left: -278px;
+    border-radius: 50%;
+    border: 1px solid #001a6a;
+}
+.lines-6{
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -153px;
+    right: -149px;
+    border-radius: 50%;
+    border: 1px solid #001a6a;
+
+
+}
+
+
+#solution h2{
+    position: relative;
+    z-index: 10;
+}
+#solution .new-solution .tt-1.small-m-w{
+    position: relative;
+    z-index: 10;
+}
+.sec-lvl-2{
+    position: relative;
+    z-index: 10;
+}
+#solution{
+    position: relative;
+    z-index: 2;
+}
+.people .human_wrap{
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .button-style-2{
     display: block;
     cursor: pointer;
@@ -574,7 +726,7 @@
     background: #001a6a;
     position: relative;
     padding: 45px 50px;
-  
+    z-index: 10;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
     .flex-form-soc{
         position: relative;
