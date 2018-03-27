@@ -152,6 +152,10 @@ $(document).ready(function () {
 
 
     $('.faq .answer').on('show.bs.collapse', function(){
+        $('.faq').each(function(e) {
+            $(this).find('.answer').collapse('hide');
+            $(this).removeClass('opened');
+        });
         $(this).parents('.faq').addClass('opened');
     });
     $('.faq .answer').on('hide.bs.collapse', function(){
