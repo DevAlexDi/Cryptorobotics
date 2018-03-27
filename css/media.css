@@ -758,7 +758,15 @@
     font-size: 14px; }
 
   .f-marg {
-    margin: 0 auto 40px auto !important; } }
+    margin: 0 auto 40px auto !important; }
+
+  #man .man_text p {
+    opacity: 1;
+    transform: none; }
+
+  #man .man_text .soc {
+    opacity: 1;
+    transform: none; } }
 @media (max-width: 500px) {
   #solution .img {
     height: 172px; }

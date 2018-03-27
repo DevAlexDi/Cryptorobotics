@@ -1737,10 +1737,10 @@ button {
     transform: translateX(80px);
     transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear;
     transition-delay: .30s, .5s; }
-#man .man_text .soc a {
+#man .man_text .soc {
   opacity: 0;
   transform: translateX(80px);
-  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear;
+  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear, box-shadow 0.3s, background 0.3s;
   transition-delay: .60s, .9s; }
 #man .man_text[data-anim=true] h5 {
   opacity: 1;
@@ -1751,7 +1751,7 @@ button {
   #man .man_text[data-anim=true] p.big {
     opacity: 1;
     transform: none; }
-#man .man_text[data-anim=true] .soc a {
+#man .man_text[data-anim=true] .soc {
   opacity: 1;
   transform: none; }
 
@@ -1780,5 +1780,12 @@ button {
 #work_with .work_with_wrap[data-anim=true] .work_logo {
   opacity: 1;
   transform: none; }
+
+.flex-icons-human a:hover {
+  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
+
+#man .man_text .soc a:hover {
+  background: #518aff !important;
+  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5) !important; }
 
 /*# sourceMappingURL=style.css.map */

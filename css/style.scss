@@ -2277,10 +2277,10 @@ button{
             transition-delay: .30s, .5s;
         }
     }
-    .soc a{
+    .soc{
         opacity: 0;
         transform: translateX(80px);
-        transition: transform .75s cubic-bezier(.39, .575, .565, 1), opacity .5s linear;
+        transition: transform .75s cubic-bezier(.39, .575, .565, 1), opacity .5s linear, box-shadow 0.3s, background 0.3s;
         transition-delay: .60s, .9s;
     }
     &[data-anim=true] {
@@ -2297,7 +2297,7 @@ button{
                 transform: none;
             }
         }
-        .soc a{
+        .soc{
             opacity: 1;
             transform: none;
         }
@@ -2341,5 +2341,17 @@ button{
             opacity: 1;
             transform: none;
         }
+    }
+}
+.flex-icons-human a{
+    &:hover{
+        box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+    }
+}
+#man .man_text .soc a{
+    
+    &:hover{
+        background: #518aff!important;
+         box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5)!important;
     }
 }

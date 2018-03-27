@@ -337,6 +337,15 @@ footer {
     text-align: left; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
-    height: 135px; } }
+    height: 200px; } }
+@media (max-width: 450px) {
+  .people .human_wrap .img {
+    height: 180px; } }
+@media (max-width: 400px) {
+  .people .human_wrap .img {
+    height: 151px; } }
+@media (max-width: 350px) {
+  .people .human_wrap .img {
+    height: 130px; } }
 
 /*# sourceMappingURL=style_tatia_new.css.map */
