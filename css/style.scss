@@ -12,14 +12,14 @@
     text-transform: uppercase;
     font-size: 12px;
     background: #001a6a;
-    border-radius: 6px;
+    border-radius: 4px;
     font-weight: bold;
     transition: 0.3s;
     color: #fff;
     border: 1px solid #0239a9;
     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.25); 
     &:hover{
-
+        border-color: #0052fb;
         box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
     }
     &.second-b{
@@ -107,10 +107,12 @@
 
 .abs-grad-6{
     position: absolute;
-    top: -422px;
+    top: 442px;
     left: -585px;
     width: 800px;
     height: 800px;
+    z-index: 1;
+    
     background: radial-gradient(closest-side, #001a6a, #061649);
 }
 
@@ -194,7 +196,8 @@
     width: 1800px;
     height: 1800px;
     position: absolute;
-    top: -916px;
+    top: -80px;
+    z-index: 2;
     left: -1043px;
     border-radius: 50%;
     border: 1px solid #001a6a;
@@ -240,11 +243,26 @@
     z-index: 10;
 }
 
-
-
-
-
-
+#contacts .addr, #contacts a{
+    position: relative;
+    z-index: 10;
+}
+#contacts .icon{
+    position: relative;
+    z-index: 10;
+}
+#contacts p,#contacts h2{
+      position: relative;
+    z-index: 10;
+}
+footer .logo{
+    position: relative;
+    z-index: 10;
+}
+footer .menu{
+    position: relative;
+    z-index: 10;
+}
 
 
 
@@ -264,7 +282,7 @@
     font-weight: bold;
 
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: 0s, box-shadow 0.3s;
     color: #fff;
     &:hover{
@@ -287,7 +305,7 @@
     background: transparent;
     font-weight: bold;
     background: #0052fb;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: 0s,box-shadow 0.3s;
     margin: 0 auto;
     color: #fff;
@@ -841,6 +859,7 @@
                     cursor: pointer;
                     background-color: #001a6a;
                     &:hover{
+                        border-color: #0052fb;
                        box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
                         &:before{
                             background: #fff;
@@ -907,7 +926,7 @@
                 outline: none;
                 background: transparent;
                 padding:13px 0;
-                
+                transition: 0.3s;
                 font-size: 18px;
                 border-bottom: 2px solid #518aff;
                 color: #fff;
@@ -937,15 +956,19 @@
             }
             input::-webkit-input-placeholder{
                 color: #518aff;
+                transition: 0.3s;
             }
             input::-moz-placeholder{
                 color: #518aff;
+                transition: 0.3s;
             }
             input:-moz-placeholder{
                 color: #518aff;
+                transition: 0.3s;
             }
             input:-ms-input-placeholder{
                 color: #518aff;
+                transition: 0.3s;
             }
         }
     }
@@ -1428,7 +1451,7 @@ button{
         align-items: center;
         background-color: #25a9df;
         transition: 0.3s;
-        border-radius: 4px;
+        border-radius: 2px;
         img{
             max-width: 25px;
         }
@@ -1856,10 +1879,10 @@ button{
         content: "";
         display: block;
         position: absolute;
-        top: 50%;
+        top: calc(50% - 1px);
         left: 11px;
         transform: translateY(-50%);
-        width: 16px;
+        width: 13px;
         height: 16px;
         background-image: url(../img/list.png);
     }
@@ -1867,10 +1890,10 @@ button{
         content: "";
         display: block;
         position: absolute;
-        top: 50%!important;
+        top: calc(50% - 1px)!important;
         left: 11px!important;
         transform: translateY(-50%);
-        width: 16px!important;
+        width: 13px!important;
         height: 16px!important;
         background: url(../img/list-white.png)!important;
         opacity: 0;
@@ -1914,6 +1937,8 @@ button{
 }
 .form-and-soc .flex-form-soc .left-side .plus-wr{
     left: -16px;
+    position: relative;
+    z-index: 50;
 }
 .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
     margin-right: 45px;
@@ -2372,4 +2397,13 @@ button{
         background: #518aff!important;
          box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5)!important;
     }
+}
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc{
+    border-radius: 4px;
+}
+.form-and-soc .flex-form-soc .left-side .plus-wr .plus{
+    border-radius: 4px;
+}
+#man .man_text .soc a{
+    border-radius: 4px;
 }

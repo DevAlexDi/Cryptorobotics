@@ -12,7 +12,7 @@
   text-transform: uppercase;
   font-size: 12px;
   background: #001a6a;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -21,6 +21,7 @@
   -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.25);
           box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.25); }
   .button-style:hover {
+    border-color: #0052fb;
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
             box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
   .button-style.second-b {
@@ -100,10 +101,11 @@
 
 .abs-grad-6 {
   position: absolute;
-  top: -422px;
+  top: 442px;
   left: -585px;
   width: 800px;
   height: 800px;
+  z-index: 1;
   background: radial-gradient(closest-side, #001a6a, #061649); }
 
 .lines-1 {
@@ -175,7 +177,8 @@
   width: 1800px;
   height: 1800px;
   position: absolute;
-  top: -916px;
+  top: -80px;
+  z-index: 2;
   left: -1043px;
   border-radius: 50%;
   border: 1px solid #001a6a;
@@ -215,6 +218,26 @@
   position: relative;
   z-index: 10; }
 
+#contacts .addr, #contacts a {
+  position: relative;
+  z-index: 10; }
+
+#contacts .icon {
+  position: relative;
+  z-index: 10; }
+
+#contacts p, #contacts h2 {
+  position: relative;
+  z-index: 10; }
+
+footer .logo {
+  position: relative;
+  z-index: 10; }
+
+footer .menu {
+  position: relative;
+  z-index: 10; }
+
 .button-style-2 {
   display: block;
   cursor: pointer;
@@ -228,7 +251,7 @@
   background: #0052fb;
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   -webkit-transition: 0s, -webkit-box-shadow 0.3s;
   transition: 0s, -webkit-box-shadow 0.3s;
   transition: 0s, box-shadow 0.3s;
@@ -252,7 +275,7 @@
   background: transparent;
   font-weight: bold;
   background: #0052fb;
-  border-radius: 6px;
+  border-radius: 4px;
   -webkit-transition: 0s,-webkit-box-shadow 0.3s;
   transition: 0s,-webkit-box-shadow 0.3s;
   transition: 0s,box-shadow 0.3s;
@@ -773,6 +796,7 @@
           cursor: pointer;
           background-color: #001a6a; }
           .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover {
+            border-color: #0052fb;
             -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
                     box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
             .form-and-soc .flex-form-soc .left-side .plus-wr .plus:hover:before {
@@ -849,6 +873,8 @@
         outline: none;
         background: transparent;
         padding: 13px 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
         font-size: 18px;
         border-bottom: 2px solid #518aff;
         color: #fff; }
@@ -870,13 +896,21 @@
         .form-and-soc .flex-form-soc .right-side .button-style-2:hover {
           background: #518aff; }
       .form-and-soc .flex-form-soc .right-side input::-webkit-input-placeholder {
-        color: #518aff; }
+        color: #518aff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
       .form-and-soc .flex-form-soc .right-side input::-moz-placeholder {
-        color: #518aff; }
+        color: #518aff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
       .form-and-soc .flex-form-soc .right-side input:-moz-placeholder {
-        color: #518aff; }
+        color: #518aff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
       .form-and-soc .flex-form-soc .right-side input:-ms-input-placeholder {
-        color: #518aff; }
+        color: #518aff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
 
 button {
   outline: none; }
@@ -1276,7 +1310,7 @@ button {
     background-color: #25a9df;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 4px; }
+    border-radius: 2px; }
     .flex-icons-human a img {
       max-width: 25px; }
     .flex-icons-human a:hover {
@@ -1674,22 +1708,22 @@ button {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 1px);
     left: 11px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 16px;
+    width: 13px;
     height: 16px;
     background-image: url(../img/list.png); }
   .img-white-paper-icon:after {
     content: "";
     display: block;
     position: absolute;
-    top: 50% !important;
+    top: calc(50% - 1px) !important;
     left: 11px !important;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 16px !important;
+    width: 13px !important;
     height: 16px !important;
     background: url(../img/list-white.png) !important;
     opacity: 0;
@@ -1728,7 +1762,9 @@ button {
   padding: 30px 50px; }
 
 .form-and-soc .flex-form-soc .left-side .plus-wr {
-  left: -16px; }
+  left: -16px;
+  position: relative;
+  z-index: 50; }
 
 .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
   margin-right: 45px; }
@@ -2175,5 +2211,14 @@ button {
   background: #518aff !important;
   -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5) !important;
           box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5) !important; }
+
+.form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  border-radius: 4px; }
+
+.form-and-soc .flex-form-soc .left-side .plus-wr .plus {
+  border-radius: 4px; }
+
+#man .man_text .soc a {
+  border-radius: 4px; }
 
 /*# sourceMappingURL=style.css.map */
