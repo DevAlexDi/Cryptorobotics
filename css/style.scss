@@ -28,7 +28,7 @@
         &:hover{
             background: #518aff;
             color: #fff;
-        
+             border: 1px solid #0239a9;
         }
     }
     &.play-inside{
@@ -658,8 +658,8 @@ footer .menu{
                     border-radius: 50%;
                     transition: 0.3s;
                     transform: translate(-50%,-50%);
-                    background: rgba(255,255,255,0.7);
-                    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+                    background: #0052fb;
+                   
                 }
                 svg{
                     position: relative;
@@ -670,12 +670,10 @@ footer .menu{
                 }
                 &:hover{
                     .abs-play{
-                        background: #fff;
-                        
+                        background: #518aff;
+                        box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.50); 
                     }
-                    polygon{
-                        fill: #0570c3;
-                    }
+                    
                 }
             }
         }
@@ -709,7 +707,7 @@ footer .menu{
                     width: 6px;
                     height: 6px;
                     border-radius: 50%;
-                    background: #25a9df;
+                    background: #0052fb;
                 }
             }
         }
@@ -1013,7 +1011,7 @@ button{
 
 .sec-slider-realiz{
     background: #061649;
-    padding: 85px 0;
+    padding: 80px 0;
     overflow: hidden;
     &.conf-sec{
         background: #061649;
@@ -1055,7 +1053,7 @@ button{
         font-weight: normal;
         color: #fff;
         font-family: "FiraSans-Bold";
-        margin-bottom: 80px;
+        margin-bottom: 100px;
         text-align: center;
     }
     .slider-realiz-init{
@@ -1286,7 +1284,7 @@ button{
         .text-we-can{
             font-family: "FiraSans-Bold";
             font-size: 30px;
-            margin-bottom: 80px;
+            margin-bottom: 105px;
             text-align: center;
             color: #0052fb;
            text-shadow: 0px 0px 10px #0052fb;
@@ -1302,7 +1300,7 @@ button{
         p{
             font-size: 20px;
             color: #518aff;
-            margin-bottom: 60px;
+            margin-bottom: 100px;
         }
     }
     .list-pr{
@@ -1451,7 +1449,7 @@ button{
         align-items: center;
         background-color: #25a9df;
         transition: 0.3s;
-        border-radius: 2px;
+        border-radius: 4px;
         img{
             max-width: 25px;
         }
@@ -2406,4 +2404,10 @@ button{
 }
 #man .man_text .soc a{
     border-radius: 4px;
+}
+.sec-lvl-1 .header-nav.scrolled{
+    border-bottom: 1px solid #0239a9;
+}
+#man{
+    padding-bottom: 70px;
 }

@@ -30,7 +30,8 @@
     transition: 0.3s; }
     .button-style.second-b:hover {
       background: #518aff;
-      color: #fff; }
+      color: #fff;
+      border: 1px solid #0239a9; }
   .button-style.play-inside {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -602,9 +603,7 @@ footer .menu {
           transition: 0.3s;
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
-          background: rgba(255, 255, 255, 0.7);
-          -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
-                  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15); }
+          background: #0052fb; }
         .main-baner .for-z-index .iframe-wr .iframe svg {
           position: relative;
           left: 2px; }
@@ -612,9 +611,9 @@ footer .menu {
           -webkit-transition: 0.3s;
           transition: 0.3s; }
         .main-baner .for-z-index .iframe-wr .iframe:hover .abs-play {
-          background: #fff; }
-        .main-baner .for-z-index .iframe-wr .iframe:hover polygon {
-          fill: #0570c3; }
+          background: #518aff;
+          -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+                  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
   .main-baner .desc-main-baner h2 {
     font-size: 36px;
     color: #fff;
@@ -641,7 +640,7 @@ footer .menu {
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #25a9df; }
+        background: #0052fb; }
   .main-baner .flex-counter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -952,7 +951,7 @@ button {
 
 .sec-slider-realiz {
   background: #061649;
-  padding: 85px 0;
+  padding: 80px 0;
   overflow: hidden; }
   .sec-slider-realiz.conf-sec {
     background: #061649; }
@@ -976,7 +975,7 @@ button {
     font-weight: normal;
     color: #fff;
     font-family: "FiraSans-Bold";
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     text-align: center; }
   .sec-slider-realiz .slider-realiz-init {
     display: -webkit-box;
@@ -1167,7 +1166,7 @@ button {
     .diagram .dia-head .text-we-can {
       font-family: "FiraSans-Bold";
       font-size: 30px;
-      margin-bottom: 80px;
+      margin-bottom: 105px;
       text-align: center;
       color: #0052fb;
       text-shadow: 0px 0px 10px #0052fb;
@@ -1181,7 +1180,7 @@ button {
     .diagram .dia-head p {
       font-size: 20px;
       color: #518aff;
-      margin-bottom: 60px; }
+      margin-bottom: 100px; }
   .diagram .list-pr {
     list-style: none;
     margin: 0; }
@@ -1310,7 +1309,7 @@ button {
     background-color: #25a9df;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 2px; }
+    border-radius: 4px; }
     .flex-icons-human a img {
       max-width: 25px; }
     .flex-icons-human a:hover {
@@ -2220,5 +2219,11 @@ button {
 
 #man .man_text .soc a {
   border-radius: 4px; }
+
+.sec-lvl-1 .header-nav.scrolled {
+  border-bottom: 1px solid #0239a9; }
+
+#man {
+  padding-bottom: 70px; }
 
 /*# sourceMappingURL=style.css.map */
