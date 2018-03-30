@@ -354,7 +354,13 @@ $(document).ready(function () {
     $('.iframe').click(function(){
         $(this).fadeOut(0);
         $(this).parent().find('.wrapp-for-movie').fadeIn(0);
-        $(this).parent().find('iframe').attr({'src':'https://www.youtube.com/embed/Xo-ORQJxKME?autoplay=1'});
+        if($('.all-content').attr('data-leng') == 'en'){
+            $(this).parent().find('iframe').attr({'src':'https://www.youtube.com/embed/Xo-ORQJxKME?autoplay=1'});
+        }
+        if($('.all-content').attr('data-leng') == 'ru'){
+            $(this).parent().find('iframe').attr({'src':'https://www.youtube.com/embed/PzqcBkA6hzg?autoplay=1'});
+            
+        }
     });
     
     $('#modal-movie').on('hidden.bs.modal', function () {
