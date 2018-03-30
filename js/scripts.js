@@ -352,8 +352,9 @@ $(document).ready(function () {
 
     
     $('.iframe').click(function(){
-        $('#modal-movie').modal('show');
-        $('iframe').attr({'src':'https://www.youtube.com/embed/Xo-ORQJxKME?autoplay=1'});
+        $(this).fadeOut(0);
+        $(this).parent().find('.wrapp-for-movie').fadeIn(0);
+        $(this).parent().find('iframe').attr({'src':'https://www.youtube.com/embed/Xo-ORQJxKME?autoplay=1'});
     });
     
     $('#modal-movie').on('hidden.bs.modal', function () {

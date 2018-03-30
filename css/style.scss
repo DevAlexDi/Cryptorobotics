@@ -25,10 +25,12 @@
     &.second-b{
         background: #0052fb;
         transition: 0.3s;
+        border: none;
+        box-shadow: none;
         &:hover{
             background: #518aff;
             color: #fff;
-             border: 1px solid #0239a9;
+             border: none;
         }
     }
     &.play-inside{
@@ -640,7 +642,7 @@ footer .menu{
                 display: block;
                 border: none;
                 width: 100%;
-                height: 367px;
+                height: 258px;
                 cursor: pointer;
                 background-image: url(../img/imagemovie.jpg);
                 background-position: center;
@@ -1366,22 +1368,28 @@ button{
     }
 }
 
-.modal{
+/*.modal{
     background: rgba(0,0,0,0.7);
     
     .modal-dialog{
         width: 100%;
         max-width: 990px;
         margin: 40px auto;
-        iframe{
-            border: none;
-            display: block;
-            width: 100%;
-                height: 528px;
-            
-        }
+        
     }
      
+}*/
+
+
+iframe{
+    border: none;
+    display: block;
+    width: 100%;
+        height: 258px;
+
+}
+.wrapp-for-movie{
+    display: none;
 }
 #myChart{
     width: 300px;
@@ -1908,7 +1916,7 @@ button{
 
 
 .form-and-soc .flex-form-soc .right-side .button-style-2{
-    padding: 17px 0;
+    padding: 16.5px 0;
     transition: 0s, box-shadow 0.3s;
 }
 .form-and-soc .flex-form-soc .right-side input{

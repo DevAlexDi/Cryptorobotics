@@ -346,6 +346,12 @@
     .form-and-soc .flex-form-soc .right-side .abs{
         padding-right: 0;
     }
+    iframe{
+        height: 405px;
+    }
+    .main-baner .for-z-index .iframe-wr .iframe{
+        height: 405px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -862,7 +868,14 @@
         opacity: 1;
         transform: none;
     }
-    
+    .wrapp-for-movie{
+         max-width: 290px;
+    margin: 0 auto 30px auto;
+    }
+    iframe{
+            height: 170px;
+   
+    }
     
     
     

@@ -335,7 +335,13 @@
     overflow: visible; }
 
   .form-and-soc .flex-form-soc .right-side .abs {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  iframe {
+    height: 405px; }
+
+  .main-baner .for-z-index .iframe-wr .iframe {
+    height: 405px; } }
 @media (max-width: 767px) {
   .sec-lvl-1 .header-nav.every-time-scrolled .flex-menu .side.right-side {
     padding: 10px 0; }
@@ -819,7 +825,14 @@
   #man .man_text .soc {
     opacity: 1;
     -webkit-transform: none;
-            transform: none; } }
+            transform: none; }
+
+  .wrapp-for-movie {
+    max-width: 290px;
+    margin: 0 auto 30px auto; }
+
+  iframe {
+    height: 170px; } }
 @media (max-width: 500px) {
   #solution .img {
     height: 172px; }
