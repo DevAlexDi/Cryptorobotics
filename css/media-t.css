@@ -26,9 +26,7 @@
     margin-bottom: 20px; }
 
   #man .man_text .soc {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    justify-content: center; }
 
   .people {
     padding: 35px 0; }
