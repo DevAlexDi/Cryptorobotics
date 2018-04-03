@@ -279,10 +279,24 @@ $(document).ready(function () {
         e.preventDefault;
         if ($(this).attr('href')) {
             var el = $(this).attr('href');
-            $('body, html').animate({
-                scrollTop: $(el).offset().top - 40
-            }, 700);
-            return false;
+            if($(this).attr('href') == "#solution"){
+                $('body, html').animate({
+                    scrollTop: $(el).offset().top
+                }, 700);
+                return false;
+            }
+            else if($(this).attr('href') == "#team" || $(this).attr('href') == "#consultants"){
+                $('body, html').animate({
+                    scrollTop: $(el).offset().top - 70
+                }, 700);
+                return false;  
+            }
+            else{
+                $('body, html').animate({
+                    scrollTop: $(el).offset().top - 40
+                }, 700);
+                return false;   
+            }
         }
     });
     

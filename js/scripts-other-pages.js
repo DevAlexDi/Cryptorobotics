@@ -275,17 +275,7 @@ $(document).ready(function () {
     }
     
     
-    $('.menu-list li a,.menu .first-itm a').click(function (e) {
-        e.preventDefault;
-        if ($(this).attr('href')) {
-            var el = $(this).attr('href');
-            $('body, html').animate({
-                scrollTop: $(el).offset().top - 40
-            }, 700);
-            return false;
-        }
-    });
-    
+   
   
 
     var menu_selector = ".menu-list"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 

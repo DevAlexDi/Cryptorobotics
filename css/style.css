@@ -1588,7 +1588,8 @@ iframe {
       .box-counter-ico .alrdy-geted-wrapp .top-range:last-child {
         margin-bottom: 0; }
         .box-counter-ico .alrdy-geted-wrapp .top-range:last-child span {
-          text-transform: inherit; }
+          text-transform: inherit;
+          letter-spacing: normal; }
     .box-counter-ico .alrdy-geted-wrapp .some-range {
       margin-bottom: 18px;
       position: relative;
