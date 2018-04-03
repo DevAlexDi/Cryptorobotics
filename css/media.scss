@@ -63,6 +63,7 @@
     .form-and-soc .flex-form-soc.opened .left-side .abs-socials .one-soc {
     margin-right: 25.5px;
 }
+   
 
 }
 
@@ -352,6 +353,10 @@
     .main-baner .for-z-index .iframe-wr .iframe{
         height: 405px;
     }
+    .all-terms-wrapp {
+    padding-top: 100px;
+}
+    
 }
 
 @media (max-width: 767px) {
@@ -404,11 +409,7 @@
     .main-baner .flex-buttons .button-style:first-child {
         margin-right: auto;
     }
-    .main-baner .for-z-index .iframe-wr .iframe {
-        height: 170px;
-        max-width: 290px;
-        margin: 0 auto 30px auto;
-    }
+   
     .sec-lvl-1 .header-nav .flex-menu .side.mid-side .menu-list {
         display: block;
     }
@@ -868,17 +869,242 @@
         opacity: 1;
         transform: none;
     }
-    .wrapp-for-movie{
-         max-width: 290px;
-    margin: 0 auto 30px auto;
+    
+    
+    
+    .main-baner .for-z-index .iframe-wr{
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            
+            padding-top: 56%;
+        }
+        .iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
-    iframe{
-            height: 170px;
-   
+    .main-baner .desc-main-baner h2{
+        font-size: 24px;
     }
     
     
     
+    .desc-main-baner {
+    margin-bottom: 37px;
+}
+    .box-counter-ico .text-start{
+        font-size: 16px;
+    }
+    
+    
+    .box-counter-ico {
+    max-width: 290px;
+    margin: 0 auto 17px auto;
+}
+    .lines-1{
+        display: none;
+    }
+    .box-counter-ico .alrdy-geted-wrapp .rdy-geted-text span{
+        font-size: 16px;
+    }
+    .box-counter-ico .alrdy-geted-wrapp {
+    padding: 0 20px;
+}
+    .main-baner .flex-buttons{
+        padding-top: 13px;
+        padding-bottom: 15px;
+    }
+    
+    .button-style{
+        padding: 17px 0;
+        font-size: 13px;
+    }
+    
+    .form-and-soc .flex-form-soc .right-side .button-style-2{
+        width: 100%;
+        max-width: 100%;
+    }
+    .form-and-soc .flex-form-soc .left-side{
+        margin-bottom: 0;
+    }
+    #solution h2{
+        font-size: 24px!important;
+    }
+    #solution, .sec-slider-realiz.conf-sec {
+    padding-top: 60px!important;
+}
+    
+    #solution h2, #solution .epigraph {
+    margin-bottom: 40px!important;
+}
+    #solution .new-solution .tt-1.small-m-w, #solution .new-solution .new-png-logo, #solution .new-solution .tt-1, .diagram .dia-head .text-we-can, #news h2, #faqs h2{
+        margin-bottom: 50px!important;
+    }
+    
+    #solution .new-solution .flex-boxes-solution .one-box img{
+        max-width: 100px;
+    }
+    #solution .new-solution .flex-boxes-solution .one-box{
+        margin-bottom: 25px;
+    }
+    .lines-1,.lines-2,.lines-3,.lines-4,.lines-5,.lines-6,.lines-7,.lines-8{
+        display: none;
+    }
+    
+    #solution .new-solution .flex-boxes-solution{
+        margin-bottom: 40px;
+    }
+    .diagram .dia-head .text-we-can{
+        font-size: 22px;
+    }
+    .diagram .dia-head h4{
+        font-size: 24px;
+        padding-top: 7px;
+        margin-bottom: 40px;
+    }
+    .diagram .dia-head p{
+        font-size: 18px;
+        margin-bottom: 60px;
+        .nowrapp{
+            white-space: nowrap;
+        }
+    }
+    .diagram .list-pr li{
+        &:nth-child(odd){
+            width: 55%;
+        }
+         &:nth-child(even){
+           
+              width: 45%;
+        }
+    }
+    .for-button-pos{
+        .button-style-2{
+            max-width: 193px;
+        }
+    }
+    .diagram{
+        padding-bottom: 60px!important;
+    }
+    .sec-slider-realiz h4 {
+        font-size: 24px;
+        max-width: 270px;
+        margin: 0 auto 150px auto;
+    }
+    .for-padd-slider .slick-arrow{
+        background-color: #061649!important;
+        &:hover{
+            border-color: #0052fb;
+        }
+    }
+    .for-padd-slider .one-slide .desc{
+        font-size: 16px;
+    }
+    .people{
+        padding-top: 65px!important;
+    }
+    .sec-slider-realiz{
+        margin-bottom: 0!important;
+    }
+    .people h2{
+        font-size: 24px;
+    }
+    .people h2{
+        margin-bottom: 55px;
+    }
+    
+    .people .human_wrap .desc{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .people .human_wrap{
+        margin-bottom: 10px;
+    }
+    #man .h55{
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+    #man .p55{
+        font-size: 18px;
+        margin-bottom: 56px;
+    }
+    #man .man_text .soc a{
+        margin-right: 0;
+    }
+    #team {
+        padding-top: 35px !important;
+    }
+    .for-anim-class-human .col-lg-3{
+        float: none;
+    }
+    #work_with h2{
+        font-size: 24px!important;
+    }
+    .abs-grad-1,.abs-grad-2,.abs-grad-3,.abs-grad-4,.abs-grad-5,.abs-grad-6,.abs-grad-7,.abs-grad-8{
+        display: none;
+    }
+    #news h2{
+        font-size: 24px;
+    }
+    
+    #faqs #all_faq{
+        margin-top: 40px;
+    }
+    #contacts h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    #contacts p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    #contacts .icon {
+    margin: 30px auto 25px auto;
+}
+    footer .logo{
+        img{
+            max-width: 150px;
+            margin: 0 auto;
+        }
+    }
+    footer .copy, footer .footer_submenu li a, footer .footer_submenu li span{
+        font-size: 14px!important;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    footer .footer_submenu li{
+        padding-left: 0!important;
+        
+    }
+    #team{
+        padding-bottom: 0!important;
+    }
+    #work_with{
+        padding-top: 30px!important;
+    }
+    .all-terms-wrapp h1{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    
+    .all-terms-wrapp{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     
 }
 

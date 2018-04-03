@@ -283,8 +283,8 @@ footer {
 }
 
 .box-counter-ico .alrdy-geted-wrapp .top-range {
-  margin-bottom: 0;
-  margin-top: 33px;
+
+
 }
 .box-counter-ico .alrdy-geted-wrapp .top-range span {
   line-height: 1.0;
@@ -298,6 +298,12 @@ footer {
   .people .human_wrap:before {
     padding-top: 118%;
   }
+     footer .footer_submenu li a, footer .footer_submenu li span{
+        font-size: 12px;
+    }
+    footer .copy{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -320,7 +326,16 @@ footer {
   footer .footer_submenu li a, footer .footer_submenu li span {
     font-size: 13px;
   }
-
+    .sm-flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer .footer_submenu{
+        justify-content: center;
+    }
+    footer .copy{
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -438,6 +453,128 @@ footer {
     .people .human_wrap .desc .function{
         text-align: left;
     }
+    #news .news_wrap .news_item .title{
+        margin-left: 0;
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 0;
+    }
+    #news .news_wrap .news_item .date{
+        margin: 0;
+    }
+    #news .news_wrap .news_item{
+        background: transparent;
+        
+    }
+    #news .news_wrap .news_item .date{
+        color: #518aff;
+        font-size: 14px;
+    }
+    #news .news_wrap .news_item{
+        border-bottom: 1px solid #001a6a;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    #news .news_wrap .news_item {
+     
+        margin: 0 0 6px 0!important;
+    }
+    #news #all_news{
+        margin-top: 20px;
+    }
+    #news .news_wrap .news_item:hover{
+        background: transparent;
+    }
+    .for-border-open{
+        .news_wrap{
+        border-top: 1px solid #001a6a;
+        }
+    }
+    #rates h2{
+        font-size: 24px;
+        margin-bottom: 65px;
+    }
+    #rates{
+        padding-top: 65px;
+    }
+    #rates .rate .img img{
+        max-width: 100px;
+            display: block;
+        height: auto;
+    }
+    #rates .rate {
+    padding-bottom: 10px;
+}
+    #rates{
+        padding-bottom: 0;
+    }
+    .diagram, .sec-slider-realiz, #man, #work_with, #faqs{
+        padding-top: 50px;
+    }
+    #faqs h2{
+        font-size: 24px;
+        margin-bottom: 60px!important;
+    }
+    #faqs .faq{
+        padding: 14px 20px;
+    }
+    #faqs .faq .question{
+        font-size: 14px;
+    }
+    
+    #faqs .faq .question:after{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    
+    #faqs .faq .answer{
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media (max-width: 500px) {
