@@ -973,7 +973,10 @@
 
   .all-terms-wrapp {
     padding-top: 60px;
-    padding-bottom: 60px; } }
+    padding-bottom: 60px; }
+
+  .for-anim-class-human .col-lg-3 {
+    width: 49.5%; } }
 @media (max-width: 500px) {
   #solution .img {
     height: 172px; }
