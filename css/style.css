@@ -2005,7 +2005,8 @@ iframe {
     color: #518aff;
     margin-bottom: 30px; }
     .all-terms-wrapp p a {
-      color: #fff; }
+      color: #fff;
+      transition: 0.3s; }
       .all-terms-wrapp p a:hover {
         text-decoration: underline; }
     .all-terms-wrapp p strong {

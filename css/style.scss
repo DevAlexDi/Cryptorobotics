@@ -2621,6 +2621,7 @@ iframe {
         margin-bottom: 30px;
         a{
             color: #fff;
+            transition: 0.3s;
             &:hover{
                 text-decoration: underline;
             }
