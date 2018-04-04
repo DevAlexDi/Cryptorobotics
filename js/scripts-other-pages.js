@@ -279,7 +279,7 @@ $(document).ready(function () {
   
 
     var menu_selector = ".menu-list"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
-    function onScroll_menu(){
+    /*function onScroll_menu(){
         var scroll_top = $(document).scrollTop();
         $(menu_selector + " .for-js-code").each(function(){
             var hash = $(this).attr("href");
@@ -290,12 +290,12 @@ $(document).ready(function () {
             } else {
                 $(this).parent().removeClass("active");
             }*/
-        });
-    }
+        /*});
+    }*/
     
     scrFunc();
     $(window).scroll(function () {
-        onScroll_menu();
+        //onScroll_menu();
         scrFunc();
         if($(window).width()>991){
             if ($(window).scrollTop() > 0) {

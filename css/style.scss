@@ -2619,6 +2619,12 @@ iframe {
     p{
         color: #518aff;
         margin-bottom: 30px;
+        a{
+            color: #fff;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
         strong{
             color: #fff;
             font-weight: normal;
@@ -2630,9 +2636,9 @@ iframe {
        margin-bottom: 27px;
         li{
             margin-bottom: 18px;
-             color: #518aff;
-        position: relative;
-        padding-left: 10px;
+            color: #518aff;
+            position: relative;
+            padding-left: 10px;
             &:before{
                 content: "";
                 display: block;
@@ -2643,6 +2649,9 @@ iframe {
                 background: #518aff;
                 top: 10px;
                 left: 0;
+            }
+            ul{
+                margin-top: 20px;
             }
         }
     }
