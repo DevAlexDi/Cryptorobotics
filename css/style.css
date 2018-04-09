@@ -2034,4 +2034,10 @@ iframe {
       .all-terms-wrapp ul li ul {
         margin-top: 20px; }
 
+.canvas-anim {
+  position: absolute;
+  top: -9px;
+  left: 59px;
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
