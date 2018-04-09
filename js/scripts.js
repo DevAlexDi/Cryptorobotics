@@ -381,12 +381,19 @@ $(document).ready(function () {
         $('iframe').attr({'src':''});
     })
     
+    $('.sec-lvl-1 .left-side .rel-wr a').click(function(e){
+        e.preventDefault;
+        $('body, html').animate({
+            scrollTop: 0
+        }, 900);
+        return false;
+        
+    });
     
     
     
     
-    
-    
+    //var parallax = new Parallax(scene);
     
     
     

@@ -154,6 +154,60 @@
     }
 }
 
+.abs-triangle{
+    position: absolute;
+    img{
+   position: relative!important;
+    top: 0;
+    left: 0;
+    }
+}
+.triangles-1{
+    .abs-triangle{
+        &.triangle-7{
+            top: 66px;
+            left: -67px;
+        }
+        &.triangle-5{
+            top: 76px;
+            left: 194px;
+        }
+        &.triangle-2{
+            top: 309px;
+            left: -61px;
+        }
+        &.triangle-4{
+            top: 91px;
+            left: 563px;
+        }
+         &.triangle-6{
+            top: 302px;
+             left: 300px;
+        }
+        &.triangle-3{
+            top: 273px;
+            right: -88px;
+            width: 27px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .abs-grad-1 {
     position: absolute;
     top: -302px;
@@ -418,6 +472,7 @@ footer .menu {
 .sec-lvl-1 {
     background-color: #061649;
     position: relative;
+        pointer-events: auto !important;
     .header-nav {
         border-bottom: 1px solid #0239a9;
         background-color: transparent;
