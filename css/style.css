@@ -144,6 +144,31 @@
   right: -88px;
   width: 27px; }
 
+.triangles-2 .abs-triangle.triangle-1 {
+  top: 23px;
+  left: 164px; }
+.triangles-2 .abs-triangle.triangle-2 {
+  top: 423px;
+  left: 37px; }
+.triangles-2 .abs-triangle.triangle-3 {
+  top: 254px;
+  left: 300px; }
+.triangles-2 .abs-triangle.triangle-4 {
+  top: 549px;
+  left: 346px; }
+.triangles-2 .abs-triangle.triangle-5 {
+  top: 204px;
+  left: 757px; }
+.triangles-2 .abs-triangle.triangle-6 {
+  top: -43px;
+  right: 300px; }
+.triangles-2 .abs-triangle.triangle-7 {
+  top: 350px;
+  right: 110px; }
+.triangles-2 .abs-triangle.triangle-8 {
+  top: 500px;
+  right: 300px; }
+
 .abs-grad-1 {
   position: absolute;
   top: -302px;
@@ -367,6 +392,9 @@ footer .menu {
 .for-w-s {
   width: 59px;
   display: block; }
+
+section {
+  pointer-events: auto !important; }
 
 .sec-lvl-1 {
   background-color: #061649;

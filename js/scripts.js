@@ -393,7 +393,7 @@ $(document).ready(function () {
     
     
     
-    //var parallax = new Parallax(scene);
+    var parallax = new Parallax(solution);
     
     
     

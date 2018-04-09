@@ -192,6 +192,45 @@
     }
 }
 
+.triangles-2{
+    .abs-triangle{
+        &.triangle-1{
+                top: 23px;
+    left: 164px;
+        }
+        &.triangle-2{
+                top: 423px;
+    left: 37px;
+        }
+        &.triangle-3{
+            top: 254px;
+    left: 300px;
+        }
+        &.triangle-4{
+                top: 549px;
+    left: 346px;
+        }
+         &.triangle-5{
+                top: 204px;
+    left: 757px;
+        }
+        &.triangle-6{
+                top: -43px;
+    right: 300px;
+           
+        }
+        &.triangle-7{
+               top: 350px;
+    right: 110px;
+           
+        }
+        &.triangle-8{
+              top: 500px;
+    right: 300px;
+           
+        }
+    }
+}
 
 
 
@@ -468,7 +507,9 @@ footer .menu {
     width: 59px;
     display: block;
 }
-
+section{
+    pointer-events: auto !important;
+}
 .sec-lvl-1 {
     background-color: #061649;
     position: relative;
