@@ -395,20 +395,21 @@ $(document).ready(function () {
     
     var parallax = new Parallax(solution);
     
+     var parallax_1 = new Parallax(scene);
+    var parallax_2 = new Parallax(scanee);
+    
+   var parallax_3 = new Parallax(road_map);
+    
+     var parallax_4 = new Parallax(consultants);
+    
+    var parallax_5 = new Parallax(man);
+    var parallax_6 = new Parallax(work_with);
+    
+    var parallax_7 = new Parallax(scaneeee);
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
+    var parallax_8 = new Parallax(faqs);
+    var parallax_9 = new Parallax(contacts);
     
 
 });
