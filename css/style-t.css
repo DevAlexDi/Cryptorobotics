@@ -104,8 +104,12 @@ body {
       #man .man_text p.big {
         font-size: 20px; }
     #man .man_text .soc {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       #man .man_text .soc a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 56px;
         height: 56px;
@@ -174,7 +178,8 @@ body {
   #news .news_item {
     cursor: pointer;
     margin-bottom: 30px;
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15); }
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15); }
     #news .news_item .img_wrap {
       position: relative;
       width: 100%;
@@ -201,6 +206,7 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
+          -webkit-transition: 0.3s;
           transition: 0.3s; }
     #news .news_item .date {
       color: #888;
@@ -208,6 +214,7 @@ body {
     #news .news_item .title {
       color: #0d264e;
       font: 18px FiraSans-Bold;
+      -webkit-transition: 0.3s;
       transition: 0.3s;
       line-height: 1.6;
       display: block;
@@ -266,6 +273,8 @@ body {
         background: #ccc; }
     #rates .rate .img {
       min-height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-top: 40px; }
       #rates .rate .img img {
@@ -283,6 +292,7 @@ body {
     background: white;
     padding: 20px 30px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 10px; }
     #faqs .faq .question {
@@ -291,6 +301,7 @@ body {
       line-height: 1.7;
       position: relative;
       margin-bottom: 0;
+      -webkit-transition: 0.3s;
       transition: 0.3s;
       padding-right: 25px; }
       #faqs .faq .question:after {
@@ -340,6 +351,8 @@ body {
     background: #004996;
     border-radius: 56px;
     margin: 0 auto 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     #contacts .icon span {
       display: block;
@@ -362,6 +375,7 @@ body {
   #contacts .addr, #contacts a {
     color: #25a9df;
     font-size: 18px;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
   #contacts a:hover {
     color: white; }
@@ -376,14 +390,19 @@ footer {
     margin: 55px 0 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     footer .menu li {
       margin: 0 10px; }
       footer .menu li a, footer .menu li span {
         color: #888;
         font-size: 16px;
         cursor: pointer;
+        -webkit-transition: 0.3s;
         transition: 0.3s; }
         footer .menu li a:hover, footer .menu li span:hover {
           color: #25a9df; }

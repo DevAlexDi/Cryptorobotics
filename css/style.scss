@@ -713,7 +713,13 @@ footer .menu {
 section {
     pointer-events: auto !important;
 }
+.sec-lvl-1 .header-nav.every-time-scrolled{
+  background: #001a6a!important;  
+}
 
+.navbar-toggle{
+    border-radius: 0!important;
+}
 .sec-lvl-1 {
     background-color: #061649;
     position: relative;

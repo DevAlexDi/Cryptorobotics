@@ -154,7 +154,7 @@ body {
 
   .faq {
     background: #001a6a;
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
     padding: 14px 30px;
 
     .question {
@@ -548,7 +548,9 @@ footer {
         padding-top: 0!important;
     }
     
-    
+    #news .news_item{
+        box-shadow: none;
+    }
     
     
     

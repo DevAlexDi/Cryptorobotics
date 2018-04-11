@@ -30,10 +30,17 @@ body {
     font: 36px FiraSans-Bold;
     margin-bottom: 50px; }
   #work_with .work_with_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #work_with .work_with_wrap .work_logo {
       margin-bottom: 30px;
       margin-top: 50px;
@@ -50,12 +57,17 @@ body {
   margin-bottom: 95px; }
 
 #news .news_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   #news .news_wrap .news_item {
     width: 33.3%;
     background: white;
     padding-bottom: 20px;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
     #news .news_wrap .news_item:nth-child(2) {
       margin: 0 30px 30px; }
@@ -74,6 +86,7 @@ body {
       color: #0052fb;
       font-size: 14px;
       text-transform: uppercase;
+      -webkit-transition: 0.3s;
       transition: 0.3s;
       letter-spacing: 1px; }
     #news .news_wrap .news_item .title {
@@ -87,7 +100,8 @@ body {
   padding: 15px 0;
   max-width: 192px; }
   #news #all_news:hover {
-    box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+            box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
     background: #061649;
     color: white; }
 
@@ -98,7 +112,8 @@ body {
     color: white; }
   #rates .rate {
     padding: 0 0 45px;
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15); }
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15); }
   #rates .num {
     padding: 50px 45px 45px;
     background: #001a6a;
@@ -111,7 +126,8 @@ body {
   margin-bottom: 100px; }
 #faqs .faq {
   background: #001a6a;
-  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
   padding: 14px 30px; }
   #faqs .faq .question {
     color: white; }
@@ -124,7 +140,8 @@ body {
   padding: 15px 0;
   max-width: 192px; }
   #faqs #all_faq:hover {
-    box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+            box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
     background: #061649;
     color: white; }
 
@@ -132,12 +149,19 @@ body {
   background: #061649;
   padding-top: 25px; }
   #contacts .icon {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
     margin: 0 30px 0 0; }
   #contacts .col-sm-6.text-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .second-form {
   margin-top: 80px;
@@ -163,12 +187,17 @@ footer {
     margin: 0;
     padding: 0 0 30px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end; }
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     footer .footer_submenu li {
       padding-left: 15px; }
       footer .footer_submenu li a, footer .footer_submenu li span {
         color: #518aff;
+        -webkit-transition: 0.3s;
         transition: 0.3s;
         font-size: 14px; }
         footer .footer_submenu li a:hover, footer .footer_submenu li span:hover {
@@ -179,18 +208,22 @@ footer {
 
 .button-style.second-b, .form-and-soc .flex-form-soc .right-side .button-style-2,
 .button-style-3, .button-style-2 {
+  -webkit-transition: 0.3s !important;
   transition: 0.3s !important; }
 
 .form-and-soc .flex-form-soc .left-side .abs-socials .one-soc {
+  -webkit-transition: 0.3s !important;
   transition: 0.3s !important; }
 
 .button-style.second-b:hover,
 .form-and-soc .flex-form-soc .right-side .button-style-2:hover,
 .button-style-3:hover,
 .button-style-2:hover {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #518aff;
-  box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5);
+          box-shadow: 0px 0px 20px 3px rgba(0, 82, 251, 0.5); }
 
 .diagram {
   padding-bottom: 35px; }
@@ -238,11 +271,18 @@ footer {
     font-size: 13px; }
 
   .sm-flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
 
   footer .footer_submenu {
-    justify-content: center; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
   footer .copy {
     text-align: center; }
@@ -270,11 +310,15 @@ footer {
     height: 345px; }
 
   .people .human_wrap {
-    box-shadow: none; }
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
   #consultants .row:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
   #work_with .work_with_wrap .work_logo {
     width: 50%;
@@ -423,13 +467,18 @@ footer {
 
   #faqs .faq .question:after {
     top: 50%;
-    transform: translateY(-50%); }
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
   #faqs .faq .answer {
     font-size: 14px; }
 
   .diagram {
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; }
+
+  #news .news_item {
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
 @media (max-width: 500px) {
   .people .human_wrap .img {
     height: 200px; } }

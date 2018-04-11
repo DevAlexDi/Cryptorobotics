@@ -28,8 +28,18 @@ $(document).ready(function () {
     
     var slider_resize_flag;
     
+    $('.collapse a').click(function(){
+        if($(window).width() <= 767){
+            $('.every-time-scrolled .collapse').collapse('hide');
+        }
+        
+        
+    });
+    
     
     if($(window).width() <= 767){
+        
+        
         $(".for-padd-slider .one-slide").unwrap();
          $('.for-padd-slider').slick({
             dots: false,
