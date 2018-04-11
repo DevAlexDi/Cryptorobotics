@@ -245,7 +245,7 @@ $(document).ready(function () {
     var scrFunc = function () {
         var t = win.scrollTop(),
             e = win.height();
-        $("[data-anim], .canvas-pos,#solution h2,#solution .new-solution .tt-1,#solution .new-solution .new-png-logo,#solution .new-solution .flex-boxes-solution,.diagram .list-pr,.for-padd-slider,.for-anim-class-human,#man .man_text,#work_with .work_with_wrap").each(function (n, i) {
+        $("[data-anim], .canvas-pos,#solution h2,#solution .new-solution .tt-1,#solution .new-solution .new-png-logo,#solution .new-solution .flex-boxes-solution,.diagram .list-pr,.for-padd-slider,.for-anim-class-human,#man .man_text,#work_with .work_with_wrap,#news .news_wrap.for-animation-qqq,#rates .for-anim-rates-qqq,#faqs .for-anim-faq-qqqq,#contacts").each(function (n, i) {
             var r = $(i).offset().top,
                 s = t + .9 * e;
             s > r ? $(i).attr("data-anim", "true") : true;
@@ -344,6 +344,23 @@ $(document).ready(function () {
     });
     
     if($(window).width()>991){
+        var parallax = new Parallax(solution);
+    
+     var parallax_1 = new Parallax(scene);
+    var parallax_2 = new Parallax(scanee);
+    
+   var parallax_3 = new Parallax(road_map);
+    
+     var parallax_4 = new Parallax(consultants);
+    
+    var parallax_5 = new Parallax(man);
+    var parallax_6 = new Parallax(work_with);
+    
+    var parallax_7 = new Parallax(scaneeee);
+    
+    
+    var parallax_8 = new Parallax(faqs);
+    var parallax_9 = new Parallax(contacts);
         if ($(window).scrollTop() > 0) {
             $(".header-nav").addClass("scrolled");
         }
@@ -393,21 +410,6 @@ $(document).ready(function () {
     
     
     
-    var parallax = new Parallax(solution);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 

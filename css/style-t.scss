@@ -241,17 +241,17 @@ body{
     .news_item {
         cursor: pointer;
         margin-bottom: 30px;
-
+        box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.15);
         .img_wrap {
             position: relative;
             width: 100%;
-            overflow: hidden;
+            
             margin-bottom: 20px;
 
             &:before {
                 content: '';
                 display: block;
-                padding-top: 61.6%;
+                padding-top: 62.1%;
             }
 
             .img {
@@ -260,12 +260,12 @@ body{
                 left: 0;
                 bottom: 0;
                 right: 0;
-                background: center center no-repeat;
+                background: center center;
                 background-size: cover;
 
                 &:after {
                     content: '';
-                    background: rgb(13, 38, 78);
+                    background: #001a6a;
                     opacity: 0.5;
                     display: block;
                     position: absolute;
@@ -290,6 +290,7 @@ body{
             line-height: 1.6;
             display: block;
             margin-top: 5px;
+            text-decoration: none!important;
         }
 
         .read {
@@ -520,21 +521,17 @@ footer {
     background: #f2f5fa;
     margin: 0;
     padding: 60px 0;
-
     .logo {
         text-align: center;
     }
-
     .menu {
         margin: 55px 0 0;
         padding: 0;
         list-style: none;
         display: flex;
         justify-content: center;
-
         li {
             margin: 0 10px;
-
             a, span {
                 color: #888;
                 font-size: 16px;

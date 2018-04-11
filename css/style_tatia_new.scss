@@ -70,7 +70,7 @@ body {
     background: white;
     padding-bottom: 20px;
     transition: 0.3s;
-
+      
     &:nth-child(2) {
       margin: 0 30px 30px;
     }
@@ -99,11 +99,13 @@ body {
       font-size: 14px;
       text-transform: uppercase;
       transition: 0.3s;
+        letter-spacing: 1px;
     }
 
     .title {
       margin: 10px 20px 0;
       font: bold 18px FiraSans;
+        line-height: inherit;
     }
   }
 }
@@ -336,6 +338,13 @@ footer {
     footer .copy{
         text-align: center;
     }
+    .people .human_wrap:before {
+    padding-top: 108%;
+    }
+    .people .human_wrap .img {
+   
+    height: 321px;
+}
 }
 
 @media (max-width: 767px) {
@@ -535,7 +544,9 @@ footer {
     }
     
     
-    
+    .diagram{
+        padding-top: 0!important;
+    }
     
     
     
